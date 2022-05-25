@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel='stylesheet' href='css/jquery.mCustomScrollbar.css' />
+    <link rel="stylesheet" href="css/the-datepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тарифы на прокат авто</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <header class='header'>
+                <div class='container'>
+                    <div class='header__inner'>
+                        <div class="header__burger-block">
+                            <button class="header__burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+                        </div>
+
+                        <a href="index.php" class="header__logo">
+                            <img src="images/svg/logo.png" alt="">
+                        </a>
+                        <nav class="nav">
+                            <div class="nav__inner">
+                                <a href="" class="nav__item nav__item--active">АВТОПАРК</a>
+                                <a href="" class="nav__item">ТАРИФЫ</a>
+                                <a href="" class="nav__item">УСЛУГИ</a>
+                                <a href="" class="nav__item">СЕРТИФИКАТЫ</a>
+                                <div class="nav__item">
+                                    <div class="nav__item-show">
+                                        <span>ИНФОРМАЦИЯ</span>
+                                        <svg width="8" height="5" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.03 7.83">
+											<path fill="#fff" d="M294,422.54l.15-.15,5.45-5.45a.77.77,0,0,1,.83-.24.78.78,0,0,1,.34,1.28l-.49.49-5.64,5.65a.81.81,0,0,1-1.29,0q-3-3-6.08-6.08a.85.85,0,0,1-.29-.84.79.79,0,0,1,1.31-.36c.29.26.55.54.82.81l4.75,4.76Z" transform="translate(-286.92 -416.61)"></path>
+										</svg>
+                                    </div>
+                                    <div class="nav__item-hidden">
+                                        <div class="nav__item-hidden-inner">
+                                            <a href="">УСЛОВИЯ АРЕНДЫ</a>
+                                            <a href="">ОТВЕТЫ НА ВОПРОСЫ</a>
+                                            <a href="">АКЦИИ И СКИДКИ</a>
+                                            <a href="">ТРЕБОВАНИЯ К АРЕНДАТОРАМ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="nav__item">КОНТАКТЫ</a>
+
+
+                                <div class="nav__mob">
+                                    <svg width="13" height="22" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.6 16.96">
+										<path fill="#019aa8" d="M297.7,412h-7.42a1.59,1.59,0,0,0-1.59,1.59v13.78a1.6,1.6,0,0,0,1.59,1.59h7.42a1.59,1.59,0,0,0,1.59-1.59V413.6A1.59,1.59,0,0,0,297.7,412Zm-5.3,1.06h3.18v.53a.53.53,0,0,1-.53.53h-2.12a.53.53,0,0,1-.53-.53Zm5.83,14.31a.53.53,0,0,1-.53.53h-7.42a.53.53,0,0,1-.53-.53V413.6a.53.53,0,0,1,.53-.53h1.06v.53a1.6,1.6,0,0,0,1.59,1.59h2.12a1.59,1.59,0,0,0,1.59-1.59v-.53h1.06a.52.52,0,0,1,.53.53Z" transform="translate(-288.69 -412.01)"></path>
+										<path fill="#019aa8" d="M294.52,425.79h-1.06a.53.53,0,0,0-.53.53.53.53,0,0,0,.53.53h1.06a.53.53,0,0,0,.53-.53A.52.52,0,0,0,294.52,425.79Z" transform="translate(-288.69 -412.01)"></path>
+									</svg>
+                                    <div>
+                                        <a class="nav__phone" href="tel:8 800 2014 888">
+											8 800 2014 888
+										</a>
+                                        <a href="" class="nav__whatsapp">
+                                            <span>8 924 259 0089</span>
+                                            <strong>
+												<svg width="13" height="13" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 12.25">
+													<path fill="#fff" d="M300.12,420.43A6.12,6.12,0,0,1,294,426.5h0a6.06,6.06,0,0,1-2.9-.73l-3.22.84.86-3.14a6.08,6.08,0,0,1,5.26-9.11,6,6,0,0,1,4.29,1.78A6.08,6.08,0,0,1,300.12,420.43Zm-1,0a5.07,5.07,0,1,0-9.37,2.69l.12.19-.51,1.86,1.91-.5.18.11a5,5,0,0,0,2.57.7A5.1,5.1,0,0,0,299.09,420.43Zm-2,1.45a1.42,1.42,0,0,1-.09.72,1.58,1.58,0,0,1-1,.73,3,3,0,0,1-1.83-.38,6.84,6.84,0,0,1-2.59-2.29,3.07,3.07,0,0,1-.62-1.57,1.74,1.74,0,0,1,.53-1.27.58.58,0,0,1,.41-.19h.29c.09,0,.22,0,.34.26s.43,1.05.47,1.12a.28.28,0,0,1,0,.27c-.29.58-.6.56-.44.83a4.05,4.05,0,0,0,2.06,1.8.23.23,0,0,0,.33,0c.09-.1.38-.44.48-.59s.2-.13.34-.08.89.42,1,.49S297,421.81,297.05,421.88Z" transform="translate(-287.87 -414.36)"></path>
+												</svg>
+												<span>WhatsApp</span>
+											</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </nav>
+                        <div class="header__right">
+                            <a href="tel:8 800 2014 888" class="header__phone">
+                                <svg width="11" height="19" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.6 16.96">
+									<path fill="#019aa8" d="M297.7,412h-7.42a1.59,1.59,0,0,0-1.59,1.59v13.78a1.6,1.6,0,0,0,1.59,1.59h7.42a1.59,1.59,0,0,0,1.59-1.59V413.6A1.59,1.59,0,0,0,297.7,412Zm-5.3,1.06h3.18v.53a.53.53,0,0,1-.53.53h-2.12a.53.53,0,0,1-.53-.53Zm5.83,14.31a.53.53,0,0,1-.53.53h-7.42a.53.53,0,0,1-.53-.53V413.6a.53.53,0,0,1,.53-.53h1.06v.53a1.6,1.6,0,0,0,1.59,1.59h2.12a1.59,1.59,0,0,0,1.59-1.59v-.53h1.06a.52.52,0,0,1,.53.53Z" transform="translate(-288.69 -412.01)"></path>
+									<path fill="#019aa8" d="M294.52,425.79h-1.06a.53.53,0,0,0-.53.53.53.53,0,0,0,.53.53h1.06a.53.53,0,0,0,.53-.53A.52.52,0,0,0,294.52,425.79Z" transform="translate(-288.69 -412.01)"></path>
+								</svg>
+                                <span>8 800 2014 888</span>
+                            </a>
+                            <a href="" class="header__whatsapp">
+                                <svg width="13" height="13" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 12.25">
+									<path fill="#fff" d="M300.12,420.43A6.12,6.12,0,0,1,294,426.5h0a6.06,6.06,0,0,1-2.9-.73l-3.22.84.86-3.14a6.08,6.08,0,0,1,5.26-9.11,6,6,0,0,1,4.29,1.78A6.08,6.08,0,0,1,300.12,420.43Zm-1,0a5.07,5.07,0,1,0-9.37,2.69l.12.19-.51,1.86,1.91-.5.18.11a5,5,0,0,0,2.57.7A5.1,5.1,0,0,0,299.09,420.43Zm-2,1.45a1.42,1.42,0,0,1-.09.72,1.58,1.58,0,0,1-1,.73,3,3,0,0,1-1.83-.38,6.84,6.84,0,0,1-2.59-2.29,3.07,3.07,0,0,1-.62-1.57,1.74,1.74,0,0,1,.53-1.27.58.58,0,0,1,.41-.19h.29c.09,0,.22,0,.34.26s.43,1.05.47,1.12a.28.28,0,0,1,0,.27c-.29.58-.6.56-.44.83a4.05,4.05,0,0,0,2.06,1.8.23.23,0,0,0,.33,0c.09-.1.38-.44.48-.59s.2-.13.34-.08.89.42,1,.49S297,421.81,297.05,421.88Z" transform="translate(-287.87 -414.36)"></path>
+								</svg>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="" class="header__instagram">
+                                <svg width="19" height="19" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.03 18.03">
+									<path fill="#fff" d="M303,416.77a6.39,6.39,0,0,0-.42-2.19A4.64,4.64,0,0,0,299.9,412a6.39,6.39,0,0,0-2.19-.42c-1,0-1.27-.06-3.72-.06s-2.75,0-3.71.06a6.34,6.34,0,0,0-2.19.42,4.33,4.33,0,0,0-1.6,1,4.42,4.42,0,0,0-1,1.59,6.66,6.66,0,0,0-.41,2.19c-.05,1-.06,1.27-.06,3.72s0,2.75.06,3.71a6.61,6.61,0,0,0,.41,2.19,4.54,4.54,0,0,0,1,1.6,4.46,4.46,0,0,0,1.6,1,6.61,6.61,0,0,0,2.19.41c1,.05,1.27.06,3.71.06s2.76,0,3.72-.06a6.66,6.66,0,0,0,2.19-.41,4.62,4.62,0,0,0,2.63-2.64,6.34,6.34,0,0,0,.42-2.19c.05-1,.06-1.27.06-3.71S303,417.73,303,416.77Zm-1.62,7.36a5.06,5.06,0,0,1-.31,1.67,2.92,2.92,0,0,1-1.71,1.71,4.86,4.86,0,0,1-1.67.31c-.95.05-1.24.05-3.65.05s-2.69,0-3.64-.05a4.8,4.8,0,0,1-1.67-.31A2.92,2.92,0,0,1,287,425.8a4.8,4.8,0,0,1-.31-1.67c-.05-.95-.05-1.24-.05-3.64s0-2.7.05-3.65a4.86,4.86,0,0,1,.31-1.67,2.92,2.92,0,0,1,1.71-1.71,5.06,5.06,0,0,1,1.67-.31c.95,0,1.24,0,3.64,0s2.7,0,3.65,0a5.12,5.12,0,0,1,1.67.31,2.92,2.92,0,0,1,1.71,1.71,5.12,5.12,0,0,1,.31,1.67c0,1,.05,1.24.05,3.65S301.37,423.18,301.33,424.13Z" transform="translate(-284.98 -411.47)"></path>
+									<path fill="#fff" d="M294,415.86a4.63,4.63,0,1,0,4.63,4.63A4.62,4.62,0,0,0,294,415.86Zm0,7.63a3,3,0,1,1,3-3A3,3,0,0,1,294,423.49Z" transform="translate(-284.98 -411.47)"></path>
+									<path fill="#fff" d="M298.81,414.59a1.09,1.09,0,1,0,1.08,1.08A1.09,1.09,0,0,0,298.81,414.59Z" transform="translate(-284.98 -411.47)"></path>
+								</svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <section class='tarifs-block'>
+                <div class="breadcrumbs breadcrumbs--center">
+                    <div class="container">
+                        <h1 class="breadcrumbs__title">Тарифы на прокат авто</h1>
+                        <div class='breadcrumbs__wrap'>
+                            <a class='breadcrumbs__item' href='index.php'>
+								Главная
+							</a>
+                            <span class='breadcrumbs__item'>
+								Тарифы
+							</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="invite invite--tarifs">
+                <div class="container">
+                    <div class="invite__inner">
+                        <div class="invite__left">
+                            <img src="images/card2.png" alt="">
+                        </div>
+                        <div class="invite__right">
+                            <div class="invite__title">
+                                Вступайте в клуб 888 <br>
+                                <span>и получайте больше привелегий</span>
+                            </div>
+                            <div class="invite__desc">Специально для наших клиентов мы разработали удобную и понятную систему бонусных карт со своими тарифами. Каждый тариф имеет свои ограничения и нюансы. Повышая свой тариф вы получаете ещё больше привелегий.</div>
+                            <div class="advantages__items">
+                                <div class="advantages__item">
+                                    <i>
+										<img src="images/svg/card-info1.png" alt="">
+									</i>
+                                    <span class="advantages__item-title">Увеличенное время работы тех.поддержки</span>
+                                </div>
+                                <div class="advantages__item">
+                                    <i>
+										<img src="images/svg/card-info2.png" alt="">
+									</i>
+                                    <span class="advantages__item-title">Увеличенная разрешенная скорость</span>
+                                </div>
+                                <div class="advantages__item">
+                                    <i>
+										<img src="images/svg/card-info3.png" alt="">
+									</i>
+                                    <span class="advantages__item-title">Бесплатная подача авто в пределах города</span>
+                                </div>
+                                <div class="advantages__item">
+                                    <i>
+										<img src="images/svg/card-info4.png" alt="">
+									</i>
+                                    <span class="advantages__item-title">Скидки по тарифам и сертификат в подарок</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="autopark-table autopark-table--tarifs">
+                <div class="autopark-table__content autopark-table__content--active">
+                    <div class="container">
+                        <div class="autopark-table__head">
+                            <div class="autopark-table__head-item">
+                                <span>Название тарифа</span>
+                                <svg width="21" height="9" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.78 9.98">
+									<path fill="#a0a0a0" d="M283.07,420.33a.67.67,0,0,1,.63-.3h19.59l-.18-.18-3.45-3.46-.15-.15a.45.45,0,0,1,0-.62.43.43,0,0,1,.6,0l.21.2,4.32,4.31a.47.47,0,0,1,0,.73l-4.39,4.38a1,1,0,0,1-.19.17.43.43,0,0,1-.55,0,.44.44,0,0,1-.08-.56,1.24,1.24,0,0,1,.19-.21l3.44-3.44a1.27,1.27,0,0,1,.19-.13l-.05-.08H283.69a.64.64,0,0,1-.62-.31Z" transform="translate(-283.07 -415.5)"></path>
+								</svg>
+                            </div>
+                            <div class="autopark-table__head-item">
+                                <span class="autopark-table__head-item-title autopark-table__head-item-title--big">
+									БАЗОВЫЙ <i class="star">*</i>
+								</span>
+                            </div>
+                            <div class="autopark-table__head-item">
+                                <span class="autopark-table__head-item-title">888CLUB</span>
+                            </div>
+                            <div class="autopark-table__head-item" style="color: #dadada;">
+                                <span class="autopark-table__head-item-title">SILVER</span>
+                            </div>
+                            <div class="autopark-table__head-item" style="color: #e6c928;">
+                                <span class="autopark-table__head-item-title">GOLD</span>
+                            </div>
+                            <div class="autopark-table__head-item" style="color: #16cfe3;">
+                                <span class="autopark-table__head-item-title">ELITE</span>
+                            </div>
+                        </div>
+                        <div class="autopark-table__items">
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">Сумма депозита</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">100 000 руб.</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">350 000 руб.</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">1 000 000 руб.</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">3 000 000 руб.</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">Срок действия депозита</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">1 год</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">2 года</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">3 года</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">5 лет</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">Пробег 200 км/сутки	</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">Пробег 210 км/сутки</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+										Лояльность до 10 км
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Бесплатная подача авто <br> в пределах Владивостока
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Лояльность до 1 часа
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Техподдержка по телефону <br> 09:00-18:00
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Техподдержка по телефону <br>						09:00-23:00
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Техпомощь на дороге 24/7
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Бесплатный забор авто
+									в пределах Владивостока
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">Да</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Бронь и отмена брони
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">100 % от стоимости <br> аренды</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">100 % от стоимости <br> аренды</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">100 % от стоимости <br> аренды</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">100 % от стоимости <br> аренды</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">100 % от стоимости <br> аренды</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Максимальная скорость
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">110 км/ч</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">110 км/ч</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">110 км/ч</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">110 км/ч</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">110 км/ч</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Снять ограничение по скорости
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+										Минимальный срок аренды
+										с водителем
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">4 часа</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">4 часа</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">4 часа</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">4 часа</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">4 часа</span>
+                                </div>
+                            </div>
+                            <div class="autopark-table__item">
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-title">
+									Дополнительный водитель
+									</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                                <div class="autopark-table__item-col">
+                                    <span class="autopark-table__item-price">-</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="autopark-table__hint">
+                            <div class="autopark-table__hint-item">* Тариф для клиентов, не являющихся владельцами клубных карт 888Club</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarifs__link-model">
+                    <svg width="52" height="40" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.9 39.99"><path fill="#1398a7" d="M319.92,413.77a4.35,4.35,0,0,0-1.64-3.55,11.38,11.38,0,0,0-3.37-1.92,46.16,46.16,0,0,0-9.2-2.34,1.56,1.56,0,0,1-.7-.33c-.74-.57-1.42-1.2-2.17-1.75a15.74,15.74,0,0,0-9.14-3.41c-2.52-.07-5-.05-7.55,0a8.74,8.74,0,0,0-2.15.32,26.36,26.36,0,0,0-7.57,3.56,10.86,10.86,0,0,1-2.3,1.44,10.24,10.24,0,0,1-2.72.08,2.06,2.06,0,0,0-2.27,2.26c0,1.17,0,2.33,0,3.5a1.22,1.22,0,0,1-.07.54c-.33.68-.69,1.34-1,2v2.94a.91.91,0,0,1,.09.17,3.19,3.19,0,0,0,3.35,2.57c.88,0,1.76,0,2.64,0,.38,0,.54.11.65.5a5.33,5.33,0,0,0,2.45,3.15l1.05-1.8a3.35,3.35,0,0,1-.77-5.06,3.26,3.26,0,0,1,4.55-.3,3.16,3.16,0,0,1,1.12,2.15,3.4,3.4,0,0,1-1.58,3.2l1.05,1.8a5.4,5.4,0,1,0-7.87-6.18c-.11.34-.24.45-.59.44-.95,0-1.89,0-2.84,0a1,1,0,0,1-1.13-.94,4.36,4.36,0,0,1,.4-2.94,4.1,4.1,0,0,0,.66-2.69c-.05-.9,0-1.79,0-2.69V408c1,0,1.87,0,2.77,0a2.55,2.55,0,0,0,1.5-.46c2-1.21,3.92-2.45,6-3.54a10.5,10.5,0,0,1,5-1.4c2.09,0,4.19,0,6.28,0a13,13,0,0,1,7.44,2.13c1.29.85,2.45,1.89,3.69,2.83a2.22,2.22,0,0,0,.93.44,53.27,53.27,0,0,1,8.26,1.94,11.28,11.28,0,0,1,3.85,2,2.33,2.33,0,0,1,.86,1.91c0,1.13,0,2.26,0,3.4,0,.16,0,.32,0,.54-1.35,0-2.67,0-4,0a.5.5,0,0,1-.59-.44,5.36,5.36,0,0,0-10.3-.06c-.13.41-.31.5-.71.5-2.51,0-5,0-7.55,0H294v2.12h.7c2.46,0,4.93,0,7.4,0a.65.65,0,0,1,.77.55,5.37,5.37,0,0,0,10.29-.1c.11-.38.29-.45.64-.45h4.81c.89,0,1.26-.38,1.26-1.27C319.92,417,319.88,415.37,319.92,413.77ZM308,422.06a3.26,3.26,0,0,1-3.25-3.25,3.21,3.21,0,0,1,3.22-3.26,3.25,3.25,0,0,1,3.29,3.26A3.29,3.29,0,0,1,308,422.06Z" transform="translate(-268.03 -400.42)"></path><path fill="#1398a7" d="M290.49,418.14a1.2,1.2,0,0,0-.68-.38c-1.11,0-2.22,0-3.35,0v2.11c.78,0,1.5,0,2.22,0a1.1,1.1,0,0,1,.89.37l9,9a3.6,3.6,0,0,1,.3.32l-8.2,8.21-.18-.16q-4.62-4.62-9.24-9.25a1.06,1.06,0,0,1-.24-.67c0-2.41,0-4.83,0-7.24,0-.18,0-.36,0-.55l1-.05v-2.09h-2a1.06,1.06,0,0,0-1.19,1.19c0,3.16,0,6.32,0,9.48a1.56,1.56,0,0,0,.4,1q5.26,5.31,10.56,10.58a1.09,1.09,0,0,0,1.76,0l9.5-9.5a1.08,1.08,0,0,0,0-1.72Q295.8,423.44,290.49,418.14Z" transform="translate(-268.03 -400.42)"></path><path fill="#1398a7" d="M299,410.12a10.25,10.25,0,0,0,3-.91l-.79-2c-.54.21-1,.42-1.54.6a2.66,2.66,0,0,1-.83.16H280.74c-.81,0-1.69.2-2.13-.7l-1.54,1.54a5.57,5.57,0,0,1,.52.48,2.16,2.16,0,0,0,1.9.81Q289.24,410.09,299,410.12Z" transform="translate(-268.03 -400.42)"></path></svg>
+                    <div class="tarifs__link-model-wrap">конкретную цену на аренду автомобиля - смотрите в <a href="">карточках авто</a></div>
+                </div>
+            </div>
+
+            <div class="autopark-pay">
+                <div class="container">
+                    <div class="autopark-pay__inner">
+                        <div class="autopark-pay__title">Принимаем к оплате:</div>
+                        <div class="autopark-pay__item">
+                            <i class="autopark-pay__item-icon">
+								<svg width="45" height="40" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.02 39.58">
+									<path fill="#1398a7" d="M316.5,410.91c-.13.46-.27.92-.39,1.38q-1.29,5-2.59,9.92a.73.73,0,0,1-.86.59.71.71,0,0,1-.51-.94q1.37-5.26,2.74-10.53s0-.08,0-.14l-5.78-1.51c-.21.83-.43,1.64-.64,2.45-.16.63-.32,1.26-.49,1.88a.73.73,0,0,1-.89.58.72.72,0,0,1-.48-.94c.37-1.4.73-2.8,1.1-4.2a1.05,1.05,0,0,1,0-.13l-15.44-4-5,19,1.28.35,5.91,1.54.21.06a.7.7,0,0,1,.47.85.69.69,0,0,1-.87.5l-6.46-1.69L275,422.56a.78.78,0,0,1-.67-.63,1.06,1.06,0,0,1,0-.39q2.64-10.11,5.29-20.22a.73.73,0,0,1,1-.58l14.1,3.7,16.65,4.35L315.8,410a1,1,0,0,1,.7.52Zm-40.65,10.41L286,424l5-19.05-10.12-2.65Z" transform="translate(-271.49 -400.7)"></path>
+									<path fill="#1398a7" d="M311.14,427.75c0,2.9,0,5.81,0,8.72a2.53,2.53,0,0,1-1,2.08,6.68,6.68,0,0,1-2.62,1.28,14.32,14.32,0,0,1-4.92.4,10.77,10.77,0,0,1-3.83-.93,4.39,4.39,0,0,1-1.65-1.25,2.2,2.2,0,0,1-.48-1.4c0-5.89,0-11.78,0-17.67a2.6,2.6,0,0,1,1.07-2.17,6.92,6.92,0,0,1,2.81-1.28,14.62,14.62,0,0,1,4.71-.32,10.68,10.68,0,0,1,3.76.94,4.3,4.3,0,0,1,1.66,1.27,2.15,2.15,0,0,1,.46,1.38v8.95Zm-7.24-6.86a12.09,12.09,0,0,0,3.63-.53,4.78,4.78,0,0,0,1.8-.94c.54-.48.53-.91,0-1.4a4.19,4.19,0,0,0-1.36-.78,10.16,10.16,0,0,0-3-.63,12.26,12.26,0,0,0-4.85.54,4.59,4.59,0,0,0-1.63.87c-.53.49-.55,1,0,1.4a5.43,5.43,0,0,0,1.3.75A11,11,0,0,0,303.9,420.89Zm-5.81,14.4c0,.44,0,.83,0,1.23a1.05,1.05,0,0,0,.37.85,3.82,3.82,0,0,0,1.33.79,10.3,10.3,0,0,0,3.24.68,12.06,12.06,0,0,0,4.7-.55,4.19,4.19,0,0,0,1.7-1,1,1,0,0,0,.29-.52c0-.49,0-1,0-1.5a13,13,0,0,1-11.64,0Zm0-10.81c0,.44,0,.85,0,1.26a1,1,0,0,0,.32.76,3.84,3.84,0,0,0,1.39.85,10.86,10.86,0,0,0,3.34.68,12.27,12.27,0,0,0,4.54-.55,4.62,4.62,0,0,0,1.53-.78,1.07,1.07,0,0,0,.52-.73c0-.49,0-1,0-1.48a13.09,13.09,0,0,1-11.64,0Zm0,3.61c0,.43,0,.82,0,1.21a1.06,1.06,0,0,0,.37.86,4.2,4.2,0,0,0,1.35.8,10.58,10.58,0,0,0,3.24.67,12.17,12.17,0,0,0,4.53-.51,4.27,4.27,0,0,0,1.8-1,1.07,1.07,0,0,0,.34-.56,14.93,14.93,0,0,0,0-1.5,13,13,0,0,1-11.64,0Zm0,3.61c0,.4,0,.77,0,1.14a1.18,1.18,0,0,0,.52,1.05,5,5,0,0,0,1.55.8,11.31,11.31,0,0,0,3.05.55,12.33,12.33,0,0,0,4.48-.55,4.84,4.84,0,0,0,1.53-.79,1.07,1.07,0,0,0,.51-.74c0-.48,0-1,0-1.46a13,13,0,0,1-11.64,0Zm11.64-10.77a13.09,13.09,0,0,1-11.64,0c0,.38,0,.74,0,1.09a1.18,1.18,0,0,0,.52,1.07,5.13,5.13,0,0,0,1.56.8,11.09,11.09,0,0,0,3,.54,12,12,0,0,0,4.5-.55,4.38,4.38,0,0,0,1.69-.93,1,1,0,0,0,.35-.64C309.74,421.85,309.73,421.41,309.73,420.93Z" transform="translate(-271.49 -400.7)"></path>
+									<path fill="#1398a7" d="M272.91,409.8v20.6h21.64a.72.72,0,0,1-.05,1.43H272.35a1.22,1.22,0,0,1-.59-.17.55.55,0,0,1-.27-.52v-.4q0-10.75,0-21.51a.77.77,0,0,1,.85-.85h3.05a.74.74,0,0,1,.8.63.71.71,0,0,1-.75.8h-2.53Z" transform="translate(-271.49 -400.7)"></path>
+									<path fill="#1398a7" d="M278.45,429.06h-3.32a.71.71,0,0,1-.68-.52.7.7,0,0,1,.31-.78.82.82,0,0,1,.37-.1q3.31,0,6.63,0a.69.69,0,0,1,.7.69.71.71,0,0,1-.72.71Z" transform="translate(-271.49 -400.7)"></path>
+									<path fill="#1398a7" d="M284.43,422.29l-.62-.15-5.49-1.43c-.54-.14-.8-.54-.63-1a.68.68,0,0,1,.83-.43l6.14,1.6a.69.69,0,0,1,.55.82A.71.71,0,0,1,284.43,422.29Z" transform="translate(-271.49 -400.7)"></path>
+									<path fill="#1398a7" d="M289.25,406.2a.68.68,0,0,1-.84.68c-1-.24-1.89-.48-2.84-.74a.68.68,0,0,1-.51-.84.69.69,0,0,1,.87-.52c.93.23,1.85.48,2.77.73A.68.68,0,0,1,289.25,406.2Z" transform="translate(-271.49 -400.7)"></path>
+								</svg>
+							</i>
+                            <span class="autopark-pay__item-title">Наличные</span>
+                        </div>
+                        <div class="autopark-pay__item">
+                            <i class="autopark-pay__item-icon">
+								<svg width="42" height="36" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.11 35.97">
+									<path fill="#1398a7" d="M314.55,425.7l0,0c-.67,1.89-1.48,2.46-3.48,2.46h-15.1c-.45,0-.84-.08-1-.54a1,1,0,0,1,.35-1.1c1.05-1,2.07-2.05,3.1-3.09a.88.88,0,0,1,1-.27.84.84,0,0,1,.3,1.4c-.5.53-1,1-1.53,1.54l-.31.34.47,0h13.05c1,0,1.51-.49,1.51-1.53V414.88c0-.13,0-.26,0-.43H295.65a.84.84,0,0,1-.79-.81.8.8,0,0,1,.75-.87c.64,0,1.29,0,1.93,0,4.94,0,9.88,0,14.81,0,.38,0,.52-.09.5-.49,0-.83,0-1.66,0-2.49v-.45H280.3v3.45h.5c3.75,0,7.49,0,11.24,0,.45,0,.84.08,1,.53a1,1,0,0,1-.35,1.11q-1.56,1.53-3.1,3.09a.89.89,0,0,1-1,.27.83.83,0,0,1-.29-1.4c.49-.53,1-1,1.52-1.54l.31-.34-.42,0c-3,0-6,0-9,0-.4,0-.49.12-.49.5,0,3.46,0,6.93,0,10.39,0,.82.3,1.13,1.11,1.13H287c.59,0,.94.29,1,.79a.81.81,0,0,1-.81.9c-2.09,0-4.18,0-6.26,0a2.49,2.49,0,0,1-2.33-2.56V414.53c-.85,0-1.66,0-2.47,0a1.06,1.06,0,0,0-.92.93,3.12,3.12,0,0,0-.05.68v19.07a1.34,1.34,0,0,0,1.52,1.54h29.51a1.34,1.34,0,0,0,1.53-1.52c0-1.74,0-3.48,0-5.22,0-.59.3-.94.79-1a.82.82,0,0,1,.9.78c0,2,.05,4,0,6a2.91,2.91,0,0,1-3,2.67H276.48a3,3,0,0,1-3-2.49,3.43,3.43,0,0,1,0-.56V415.86a3,3,0,0,1,3.06-3.08h2.08v-7.17a3,3,0,0,1,3.11-3.11h29.62a3,3,0,0,1,3.17,2.39s0,.06.07.09Zm-18-18.09h15.86c.33,0,.45-.09.43-.43,0-.55,0-1.1,0-1.64a1.2,1.2,0,0,0-.69-1.18,2.45,2.45,0,0,0-.94-.16H281.79a1.33,1.33,0,0,0-1.51,1.51v1.36c0,.54,0,.54.54.54Z" transform="translate(-273.44 -402.5)"></path>
+									<path fill="#1398a7" d="M290.55,427.32a.83.83,0,0,1-.82.86.84.84,0,0,1-.87-.85.85.85,0,0,1,1.69,0Z" transform="translate(-273.44 -402.5)"></path>
+								</svg>
+							</i>
+                            <span class="autopark-pay__item-title">Карты VISA, MasterCard, МИР</span>
+                        </div>
+                        <div class="autopark-pay__item">
+                            <i class="autopark-pay__item-icon">
+								<svg width="32" height="42" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.77 42.77">
+									<path fill="#1398a7" d="M309.87,406.62a1,1,0,0,0-.26-.61q-3.25-3.28-6.55-6.56c-.1-.11-.19-.23-.29-.35H278.11v42.41c0,.12,0,.24,0,.36h31.75v-.36Q309.88,424.07,309.87,406.62Zm-6.67-4.69L307,405.8H303.2Zm5.14,38.43h-28.7V400.64h22v6.7h6.73Z" transform="translate(-278.11 -399.1)"></path>
+									<path fill="#1398a7" d="M283.32,433.79h21.34V411.57H283.32Zm14.08-1.52H284.87v-2.56H297.4Zm0-4.19H284.87v-2.54h12.54Zm-12.55-4.14v-2.53h12.55v2.53Zm12.55-4.13H284.86v-2.56h12.55Zm5.7,5.73v2.54H299v-2.54Zm-4.12-1.6v-2.53h4.12v2.53Zm4.13,8.33H299v-2.56h4.13Zm0-12.46H299v-2.56h4.15Zm-18.27-6.73h18.25v2.56H284.86Z" transform="translate(-278.11 -399.1)"></path>
+									<path fill="#1398a7" d="M283.34,410.15h15.54v-1.49H283.34Z" transform="translate(-278.11 -399.1)"></path>
+									<path fill="#1398a7" d="M290.55,406.27c0-.34-.08-.46-.44-.46-2.13,0-4.26,0-6.39,0-.13,0-.27,0-.38,0v1.5h7.2C290.54,407,290.52,406.61,290.55,406.27Z" transform="translate(-278.11 -399.1)"></path>
+									<path fill="#1398a7" d="M304.19,435.16h-6.35c-.16,0-.39-.07-.39.23v1.29h7.21v-1.52Z" transform="translate(-278.11 -399.1)"></path>
+								</svg>
+							</i>
+                            <span class="autopark-pay__item-title">Оплата через банк по счёту</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class='tarifs'>
+                <a href="" class="tarifs__rent btn btn-blue">
+                    <span>ОЗНАКОМИТЬСЯ С ПРАВИЛАМИ И УСЛОВИЯМИ АРЕНДЫ</span>
+                </a>
+                <div class='container'>
+                    <div class="tarifs__title">Выберите подходящий Вам тариф:</div>
+                    <div class='tarifs__items'>
+                        <div class="tarifs__item">
+                            <div class="tarifs__item-show">
+                                <img src="images/tarif.png" alt="">
+                            </div>
+                            <div class="tarifs__item-hidden">
+                                <div class="tarifs__item-title">888CLUB SILVER</div>
+                                <div class="tarifs__item-wrap">
+                                    <div class="tarifs__item-info">
+                                        <span>Размер депозита:</span>
+                                        <strong>100 000 руб.</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Скидка на аренду:</span>
+                                        <strong>5%</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Срок действия:</span>
+                                        <strong>1 год</strong>
+                                    </div>
+                                </div>
+                                <button class="tarifs__item-btn btn btn-grey-outline">ОФОРМИТЬ КЛУБНУЮ КАРТУ</button>
+                            </div>
+                        </div>
+                        <div class="tarifs__item">
+                            <div class="tarifs__item-show">
+                                <img src="images/tarif.png" alt="">
+                            </div>
+                            <div class="tarifs__item-hidden">
+                                <div class="tarifs__item-title">888CLUB SILVER</div>
+                                <div class="tarifs__item-wrap">
+                                    <div class="tarifs__item-info">
+                                        <span>Размер депозита:</span>
+                                        <strong>100 000 руб.</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Скидка на аренду:</span>
+                                        <strong>5%</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Срок действия:</span>
+                                        <strong>1 год</strong>
+                                    </div>
+                                </div>
+                                <button class="tarifs__item-btn btn btn-grey-outline">ОФОРМИТЬ КЛУБНУЮ КАРТУ</button>
+                            </div>
+                        </div>
+                        <div class="tarifs__item">
+                            <div class="tarifs__item-show">
+                                <img src="images/tarif2.png" alt="">
+                            </div>
+                            <div class="tarifs__item-hidden">
+                                <div class="tarifs__item-title">888CLUB SILVER</div>
+                                <div class="tarifs__item-wrap">
+                                    <div class="tarifs__item-info">
+                                        <span>Размер депозита:</span>
+                                        <strong>100 000 руб.</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Скидка на аренду:</span>
+                                        <strong>5%</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Срок действия:</span>
+                                        <strong>1 год</strong>
+                                    </div>
+                                </div>
+                                <button class="tarifs__item-btn btn btn-grey-outline">ОФОРМИТЬ КЛУБНУЮ КАРТУ</button>
+                            </div>
+                        </div>
+                        <div class="tarifs__item">
+                            <div class="tarifs__item-show">
+                                <img src="images/tarif3.png" alt="">
+                            </div>
+                            <div class="tarifs__item-hidden">
+                                <div class="tarifs__item-title">888CLUB SILVER</div>
+                                <div class="tarifs__item-wrap">
+                                    <div class="tarifs__item-info">
+                                        <span>Размер депозита:</span>
+                                        <strong>100 000 руб.</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Скидка на аренду:</span>
+                                        <strong>5%</strong>
+                                    </div>
+                                    <div class="tarifs__item-info">
+                                        <span>Срок действия:</span>
+                                        <strong>1 год</strong>
+                                    </div>
+                                </div>
+                                <button class="tarifs__item-btn btn btn-grey-outline">ОФОРМИТЬ КЛУБНУЮ КАРТУ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="autopark-contact autopark-contact--tarif">
+                <img src="images/contact_bg.png" alt="">
+                <div class="container">
+                    <div class="autopark-contact__inner">
+                        <div class="autopark-contact__left">
+                            <button class="autopark-contact__btn btn btn-black">
+								ОТПРАВИТЬ ЗАЯВКУ НА ВСТУПЛЕНИЕ В КЛУБ
+							</button>
+                        </div>
+                        <div class="autopark-contact__right">
+                            <div class="autopark-contact__contacts">
+                                <div class="autopark-contact__phones">
+                                    <div class="autopark-contact__phone">
+                                        <svg width="15" height="24" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.6 16.96">
+											<path fill="#fff" d="M297.7,412h-7.42a1.59,1.59,0,0,0-1.59,1.59v13.78a1.6,1.6,0,0,0,1.59,1.59h7.42a1.59,1.59,0,0,0,1.59-1.59V413.6A1.59,1.59,0,0,0,297.7,412Zm-5.3,1.06h3.18v.53a.53.53,0,0,1-.53.53h-2.12a.53.53,0,0,1-.53-.53Zm5.83,14.31a.53.53,0,0,1-.53.53h-7.42a.53.53,0,0,1-.53-.53V413.6a.53.53,0,0,1,.53-.53h1.06v.53a1.6,1.6,0,0,0,1.59,1.59h2.12a1.59,1.59,0,0,0,1.59-1.59v-.53h1.06a.52.52,0,0,1,.53.53Z" transform="translate(-288.69 -412.01)"></path>
+											<path fill="#fff" d="M294.52,425.79h-1.06a.53.53,0,0,0-.53.53.53.53,0,0,0,.53.53h1.06a.53.53,0,0,0,.53-.53A.52.52,0,0,0,294.52,425.79Z" transform="translate(-288.69 -412.01)"></path>
+										</svg>
+                                        <div>
+                                            <a href="tel:8 800 2014 888">8 800 2014 888</a>
+                                            <span>бесплатно по всей России</span>
+                                        </div>
+                                    </div>
+
+                                    <a class="autopark-contact__whatsapp">
+                                        <strong>8 924 259 0089</strong>
+                                        <svg width="13" height="13" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 12.25">
+											<path fill="#fff" d="M300.12,420.43A6.12,6.12,0,0,1,294,426.5h0a6.06,6.06,0,0,1-2.9-.73l-3.22.84.86-3.14a6.08,6.08,0,0,1,5.26-9.11,6,6,0,0,1,4.29,1.78A6.08,6.08,0,0,1,300.12,420.43Zm-1,0a5.07,5.07,0,1,0-9.37,2.69l.12.19-.51,1.86,1.91-.5.18.11a5,5,0,0,0,2.57.7A5.1,5.1,0,0,0,299.09,420.43Zm-2,1.45a1.42,1.42,0,0,1-.09.72,1.58,1.58,0,0,1-1,.73,3,3,0,0,1-1.83-.38,6.84,6.84,0,0,1-2.59-2.29,3.07,3.07,0,0,1-.62-1.57,1.74,1.74,0,0,1,.53-1.27.58.58,0,0,1,.41-.19h.29c.09,0,.22,0,.34.26s.43,1.05.47,1.12a.28.28,0,0,1,0,.27c-.29.58-.6.56-.44.83a4.05,4.05,0,0,0,2.06,1.8.23.23,0,0,0,.33,0c.09-.1.38-.44.48-.59s.2-.13.34-.08.89.42,1,.49S297,421.81,297.05,421.88Z" transform="translate(-287.87 -414.36)"></path>
+										</svg>
+                                        <span>WhatsApp</span>
+                                    </a>
+                                </div>
+                                <div class="autopark-contact__instagram">
+                                    <svg width="18" height="18" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.03 18.03">
+										<path fill="#fff" d="M303,416.77a6.39,6.39,0,0,0-.42-2.19A4.64,4.64,0,0,0,299.9,412a6.39,6.39,0,0,0-2.19-.42c-1,0-1.27-.06-3.72-.06s-2.75,0-3.71.06a6.34,6.34,0,0,0-2.19.42,4.33,4.33,0,0,0-1.6,1,4.42,4.42,0,0,0-1,1.59,6.66,6.66,0,0,0-.41,2.19c-.05,1-.06,1.27-.06,3.72s0,2.75.06,3.71a6.61,6.61,0,0,0,.41,2.19,4.54,4.54,0,0,0,1,1.6,4.46,4.46,0,0,0,1.6,1,6.61,6.61,0,0,0,2.19.41c1,.05,1.27.06,3.71.06s2.76,0,3.72-.06a6.66,6.66,0,0,0,2.19-.41,4.62,4.62,0,0,0,2.63-2.64,6.34,6.34,0,0,0,.42-2.19c.05-1,.06-1.27.06-3.71S303,417.73,303,416.77Zm-1.62,7.36a5.06,5.06,0,0,1-.31,1.67,2.92,2.92,0,0,1-1.71,1.71,4.86,4.86,0,0,1-1.67.31c-.95.05-1.24.05-3.65.05s-2.69,0-3.64-.05a4.8,4.8,0,0,1-1.67-.31A2.92,2.92,0,0,1,287,425.8a4.8,4.8,0,0,1-.31-1.67c-.05-.95-.05-1.24-.05-3.64s0-2.7.05-3.65a4.86,4.86,0,0,1,.31-1.67,2.92,2.92,0,0,1,1.71-1.71,5.06,5.06,0,0,1,1.67-.31c.95,0,1.24,0,3.64,0s2.7,0,3.65,0a5.12,5.12,0,0,1,1.67.31,2.92,2.92,0,0,1,1.71,1.71,5.12,5.12,0,0,1,.31,1.67c0,1,.05,1.24.05,3.65S301.37,423.18,301.33,424.13Z" transform="translate(-284.98 -411.47)"></path>
+										<path fill="#fff" d="M294,415.86a4.63,4.63,0,1,0,4.63,4.63A4.62,4.62,0,0,0,294,415.86Zm0,7.63a3,3,0,1,1,3-3A3,3,0,0,1,294,423.49Z" transform="translate(-284.98 -411.47)"></path>
+										<path fill="#fff" d="M298.81,414.59a1.09,1.09,0,1,0,1.08,1.08A1.09,1.09,0,0,0,298.81,414.59Z" transform="translate(-284.98 -411.47)"></path>
+									</svg>
+                                    <div>
+                                        <a href="">888auto.club</a>
+                                        <span>
+											пишите свои вопросы <br>
+											в наш Direct Instagram
+										</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class='club-card'>
+                <div class='container'>
+                    <div class='club-card__inner'>
+                        <div class="club-card__left">
+                            <div class="club-card__title">
+                                Клубная карта 888 <br>
+                                <span>в подарок!</span>
+                            </div>
+                            <div class="club-card__desc">
+                                <p>Не хотите ограничиваться арендой одного автомобиля? Хотите предоставить возможность выбора близкому человеку?</p>
+                                <p>Вы можете приобрести в подарок одну из Клубных карт 888Club!</p>
+                            </div>
+                            <button class="club-card__btn btn btn-blue shadow">ЗАКАЗАТЬ КЛУБНУЮ КАРТУ</button>
+                        </div>
+                        <div class="club-card__right">
+                            <img src="images/gift.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class='footer'>
+            <section class="footer-top">
+                <div class='container'>
+                    <div class='footer-top__inner'>
+                        <div class="footer__col">
+                            <div class="footer__title">ИНФОРМАЦИЯ</div>
+                            <a href="" class="footer__item">О компании</a>
+                            <a href="" class="footer__item">Тарифы</a>
+                            <a href="" class="footer__item">Клубные карты</a>
+                            <a href="" class="footer__item">Правила и условия аренды</a>
+                            <a href="" class="footer__item">Подарочные сертификаты</a>
+                            <a href="" class="footer__item">Контакты</a>
+                        </div>
+
+                        <div class="footer__col">
+                            <div class="footer__title">УСЛУГИ</div>
+                            <a href="" class="footer__item">Аренда на свадьбу</a>
+                            <a href="" class="footer__item">Аренда на день рождения</a>
+                            <a href="" class="footer__item">Аренда для фотосессии</a>
+                            <a href="" class="footer__item">Аренда для видеосъёмки</a>
+                            <a href="" class="footer__item">Трансфер из/в аэропорт</a>
+                        </div>
+
+                        <div class="footer__col">
+                            <div class="footer__title">КОНТАКТЫ</div>
+                            <div class="footer__contacts">
+                                <div class="footer__phones">
+                                    <div class="footer__phone">
+                                        <svg width="11" height="17" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.6 16.96">
+											<path fill="#009aa8" d="M297.7,412h-7.42a1.59,1.59,0,0,0-1.59,1.59v13.78a1.6,1.6,0,0,0,1.59,1.59h7.42a1.59,1.59,0,0,0,1.59-1.59V413.6A1.59,1.59,0,0,0,297.7,412Zm-5.3,1.06h3.18v.53a.53.53,0,0,1-.53.53h-2.12a.53.53,0,0,1-.53-.53Zm5.83,14.31a.53.53,0,0,1-.53.53h-7.42a.53.53,0,0,1-.53-.53V413.6a.53.53,0,0,1,.53-.53h1.06v.53a1.6,1.6,0,0,0,1.59,1.59h2.12a1.59,1.59,0,0,0,1.59-1.59v-.53h1.06a.52.52,0,0,1,.53.53Z" transform="translate(-288.69 -412.01)"></path>
+											<path fill="#009aa8" d="M294.52,425.79h-1.06a.53.53,0,0,0-.53.53.53.53,0,0,0,.53.53h1.06a.53.53,0,0,0,.53-.53A.52.52,0,0,0,294.52,425.79Z" transform="translate(-288.69 -412.01)"></path>
+										</svg>
+                                        <div>
+                                            <a href="tel:8 800 2014 888">8 800 2014 888</a>
+                                            <span>бесплатно по всей России</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer__whatsapp">
+                                        <a href="">8 924 259 0089</a>
+                                        <div class="footer__whatsapp-bottom">
+                                            <svg width="12" height="12" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 12.25">
+												<path fill="#a4a4a4" d="M300.12,420.43A6.12,6.12,0,0,1,294,426.5h0a6.06,6.06,0,0,1-2.9-.73l-3.22.84.86-3.14a6.08,6.08,0,0,1,5.26-9.11,6,6,0,0,1,4.29,1.78A6.08,6.08,0,0,1,300.12,420.43Zm-1,0a5.07,5.07,0,1,0-9.37,2.69l.12.19-.51,1.86,1.91-.5.18.11a5,5,0,0,0,2.57.7A5.1,5.1,0,0,0,299.09,420.43Zm-2,1.45a1.42,1.42,0,0,1-.09.72,1.58,1.58,0,0,1-1,.73,3,3,0,0,1-1.83-.38,6.84,6.84,0,0,1-2.59-2.29,3.07,3.07,0,0,1-.62-1.57,1.74,1.74,0,0,1,.53-1.27.58.58,0,0,1,.41-.19h.29c.09,0,.22,0,.34.26s.43,1.05.47,1.12a.28.28,0,0,1,0,.27c-.29.58-.6.56-.44.83a4.05,4.05,0,0,0,2.06,1.8.23.23,0,0,0,.33,0c.09-.1.38-.44.48-.59s.2-.13.34-.08.89.42,1,.49S297,421.81,297.05,421.88Z" transform="translate(-287.87 -414.36)"></path>
+											</svg>
+                                            <span>WhatsApp</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer__instagram">
+                                    <svg width="17" height="17" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.03 18.03">
+										<path fill="#009aa8" d="M303,416.77a6.39,6.39,0,0,0-.42-2.19A4.64,4.64,0,0,0,299.9,412a6.39,6.39,0,0,0-2.19-.42c-1,0-1.27-.06-3.72-.06s-2.75,0-3.71.06a6.34,6.34,0,0,0-2.19.42,4.33,4.33,0,0,0-1.6,1,4.42,4.42,0,0,0-1,1.59,6.66,6.66,0,0,0-.41,2.19c-.05,1-.06,1.27-.06,3.72s0,2.75.06,3.71a6.61,6.61,0,0,0,.41,2.19,4.54,4.54,0,0,0,1,1.6,4.46,4.46,0,0,0,1.6,1,6.61,6.61,0,0,0,2.19.41c1,.05,1.27.06,3.71.06s2.76,0,3.72-.06a6.66,6.66,0,0,0,2.19-.41,4.62,4.62,0,0,0,2.63-2.64,6.34,6.34,0,0,0,.42-2.19c.05-1,.06-1.27.06-3.71S303,417.73,303,416.77Zm-1.62,7.36a5.06,5.06,0,0,1-.31,1.67,2.92,2.92,0,0,1-1.71,1.71,4.86,4.86,0,0,1-1.67.31c-.95.05-1.24.05-3.65.05s-2.69,0-3.64-.05a4.8,4.8,0,0,1-1.67-.31A2.92,2.92,0,0,1,287,425.8a4.8,4.8,0,0,1-.31-1.67c-.05-.95-.05-1.24-.05-3.64s0-2.7.05-3.65a4.86,4.86,0,0,1,.31-1.67,2.92,2.92,0,0,1,1.71-1.71,5.06,5.06,0,0,1,1.67-.31c.95,0,1.24,0,3.64,0s2.7,0,3.65,0a5.12,5.12,0,0,1,1.67.31,2.92,2.92,0,0,1,1.71,1.71,5.12,5.12,0,0,1,.31,1.67c0,1,.05,1.24.05,3.65S301.37,423.18,301.33,424.13Z" transform="translate(-284.98 -411.47)"></path>
+										<path fill="#009aa8" d="M294,415.86a4.63,4.63,0,1,0,4.63,4.63A4.62,4.62,0,0,0,294,415.86Zm0,7.63a3,3,0,1,1,3-3A3,3,0,0,1,294,423.49Z" transform="translate(-284.98 -411.47)"></path>
+										<path fill="#009aa8" d="M298.81,414.59a1.09,1.09,0,1,0,1.08,1.08A1.09,1.09,0,0,0,298.81,414.59Z" transform="translate(-284.98 -411.47)"></path>
+									</svg>
+                                    <span>Instagram:</span>
+                                    <a href="">888auto.club</a>
+                                </div>
+                            </div>
+                            <div class="footer__address">
+                                <svg width="8" height="15" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.88 14">
+									<path fill="#079ba9" d="M297.93,417.4a3.94,3.94,0,1,1-3.94-3.94A3.94,3.94,0,0,1,297.93,417.4Zm-3.61-2.19a.33.33,0,0,0-.33-.33,2.52,2.52,0,0,0-2.51,2.52.33.33,0,0,0,.33.33.32.32,0,0,0,.32-.33,1.86,1.86,0,0,1,1.86-1.86A.33.33,0,0,0,294.32,415.21Zm-.33,7a5.14,5.14,0,0,0,.88-.08v4.28l-.6.9a.33.33,0,0,1-.55,0l-.6-.9v-4.28A4.94,4.94,0,0,0,294,422.21Z" transform="translate(-290.06 -413.46)"></path>
+								</svg>
+                                <div>
+                                    <a href="">​г. Владивосток, Партизанский проспект, 44в, (гостиничный комплекс “Novotel”)​</a>
+                                    <span>ежедневно с 10 до 20 без перерывов и выходных</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='footer-bottom'>
+                <div class='container'>
+                    <div class='footer-bottom__inner'>
+                        <div class="footer__col">
+                            ИП Скавыш Евгений Леонидович <br> ИНН 251135068330, ОГРН 309251117300030
+                        </div>
+                        <div class="footer__col footer__by">
+                            Разработка сайта - <a href="http://www.kefirok.ru" target="_blank"> студия Кефирок</a>. 2021
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__info">
+                                <a href="">Политика конфиденциальности</a>
+                                <a href="">Публичная оферта</a>
+                                <div class="footer__pay">
+                                    <img src="images/svg/footer-payment.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src='js/jquery.mCustomScrollbar.concat.min.js'></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/the-datepicker.min.js"></script>
+        <script src="js/index.js"></script>
+    </div>
+
+</body>
+
+</html>

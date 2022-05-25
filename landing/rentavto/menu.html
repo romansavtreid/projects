@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel='stylesheet' href='css/jquery.mCustomScrollbar.css' />
+    <link rel="stylesheet" href="css/the-datepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            /* color: #000; */
+            background-color: #ccc;
+        }
+        
+        .jlist {
+            padding-top: 40px;
+        }
+        
+        .jcont li {
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        
+        .jcont {
+            color: #000000;
+            font-size: 14px;
+            color: #000;
+        }
+        /*color: #000; */
+    </style>
+
+    <div class="page_wrapper">
+        <div class="page_wrapper_content">
+            <section class="jlist">
+                <div class="container">
+                    <div class="jcont">
+                        <ul>
+                            <li>
+                                <a href="index.html" target="_blank">
+									Index
+								</a>
+                            </li>
+
+                            <li>
+                                <a href="404.html" target="_blank">
+									404
+								</a>
+                            </li>
+                            <li>
+                                <a href="autopark.html" target="_blank">
+									autopark
+								</a>
+                            </li>
+                            <li>
+                                <a href="autopark-item.html" target="_blank">
+									autopark-item
+								</a>
+                            </li>
+                            <li>
+                                <a href="certificate.html" target="_blank">
+									certificate
+								</a>
+                            </li>
+                            <li>
+                                <a href="check-certificate.html" target="_blank">
+									check-certificate
+								</a>
+                            </li>
+                            <li>
+                                <a href="check-certificate-error.html" target="_blank">
+									check-certificate-error
+								</a>
+                            </li>
+                            <li>
+                                <a href="check-certificate-plus.html" target="_blank">
+									check-certificate-plus
+								</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html" target="_blank">
+									contacts
+								</a>
+                            </li>
+                            <li>
+                                <a href="information.html" target="_blank">
+									information
+								</a>
+                            </li>
+                            <li>
+                                <a href="katers.html" target="_blank">
+									katers
+								</a>
+                            </li>
+                            <li>
+                                <a href="kater-item.html" target="_blank">
+									kater-item
+								</a>
+                            </li>
+                            <li>
+                                <a href="service.html" target="_blank">
+									service
+								</a>
+                            </li>
+                            <li>
+                                <a href="service-page.html" target="_blank">
+									service-page
+								</a>
+                            </li>
+                            <li>
+                                <a href="skidki.html" target="_blank">
+									skidki
+								</a>
+                            </li>
+                            <li>
+                                <a href="tarifs.html" target="_blank">
+									tarifs
+								</a>
+                            </li>
+                            <li>
+                                <a href="textpage.html" target="_blank">
+									textpage
+								</a>
+                            </li>
+
+                        </ul>
+                        <button style="border:1px solid #000; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal1">modal1</button>
+                        <button style="border:1px solid #000; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal2">modal2</button>
+                        <button style="border:1px solid #000; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal3">modal3</button>
+                        <button style="border:1px solid #000; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal4">modal4</button>
+                        <button style="border:1px solid #000; margin-top: 20px; margin-left: 20px; width: 300px; height: 50px;" type="button" data-toggle="modal" data-target="#modal5">modal5</button>
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="modal fade modal1" id="modal1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <button type="button" class="modal__close close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">
+				  <svg width="16" height="16" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+					<path fill="#a5aaad" d="M298.92,420.81l5-5a.6.6,0,1,0-.85-.85l-5,5-5-5a.6.6,0,1,0-.85.85l5,5-5,5a.61.61,0,0,0,0,.85.62.62,0,0,0,.85,0l5-5,5,5a.62.62,0,0,0,.85,0,.61.61,0,0,0,0-.85Z" transform="translate(-292.08 -414.81)"></path>
+				  </svg>
+				</span>
+			  </button>
+                <div class="modal__content">
+                    <div class="modal__title">Заявка на клубную карту</div>
+                    <div class="modal__subtitle">Выберите тариф:</div>
+                    <form action="" class="modal__form">
+                        <div class="select-tarif">
+                            <div class="select-tarif__show">
+                                <div class="select-tarif__show-item select-tarif__show-item--active" data-tarif-show="1">
+                                    <div class="select-tarif__show-title">Porsche Boxter S</div>
+                                    <div class="select-tarif__show-price">от 10 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="2">
+                                    <div class="select-tarif__show-title">Ford Mustang</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="3">
+                                    <div class="select-tarif__show-title">Chevrolet Camarodiv</div>
+                                    <div class=" select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="4">
+                                    <div class="select-tarif__show-title">Mini Hatch One</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="5">
+                                    <div class="select-tarif__show-title">Audi TT</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="6">
+                                    <div class="select-tarif__show-title">Bentley Continental GT 2</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                            </div>
+
+                            <div class="select-tarif__hidden">
+                                <div class="select-tarif__hidden-item select-tarif__hidden-item--active" data-tarif-show="1">
+                                    <div class="select-tarif__hidden-title">Porsche Boxter S</div>
+                                    <div class="select-tarif__hidden-price">от 10 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="2">
+                                    <div class="select-tarif__hidden-title">Ford Mustang</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="3">
+                                    <div class="select-tarif__hidden-title">Chevrolet Camarodiv</div>
+                                    <div class=" select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="4">
+                                    <div class="select-tarif__hidden-title">Mini Hatch One</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="5">
+                                    <div class="select-tarif__hidden-title">Audi TT</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="6">
+                                    <div class="select-tarif__hidden-title">Bentley Continental GT 2</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Ваша фамилия и имя">
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Электронная почта">
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Номер телефона">
+                        </div>
+                        <button class="modal__btn btn btn-blue shadow">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    </form>
+                    <div class="modal__hint">
+                        Нажимая кнопку отправить, вы соглашаетесь с <br> <a href="">условиями обработки данных</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal2" id="modal2" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <button type="button" class="modal__close close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">
+				  <svg width="16" height="16" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+					<path fill="#a5aaad" d="M298.92,420.81l5-5a.6.6,0,1,0-.85-.85l-5,5-5-5a.6.6,0,1,0-.85.85l5,5-5,5a.61.61,0,0,0,0,.85.62.62,0,0,0,.85,0l5-5,5,5a.62.62,0,0,0,.85,0,.61.61,0,0,0,0-.85Z" transform="translate(-292.08 -414.81)"></path>
+				  </svg>
+				</span>
+			  </button>
+                <div class="modal__content">
+                    <div class="modal__title">Заказ сертификата</div>
+                    <div class="modal__tabs">
+                        <div class="modal__tab modal__tab--active" data-tab-path="1">
+                            <i></i>
+                            <span>На сумму в рублях</span>
+                        </div>
+                        <div class="modal__tab" data-tab-path="2">
+                            <i></i>
+                            <span>На аренду авто</span>
+                        </div>
+                    </div>
+                    <form action="" class="modal__form modal__form-tab" data-tab-path="1">
+                        <div class="modal__form-sum">
+                            <span>Сумма сертификата:</span>
+                            <input type="text" value="8000">
+                            <strong>рублей</strong>
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Ваша фамилия и имя">
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Электронная почта">
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Номер телефона">
+                        </div>
+                        <button class="modal__btn btn btn-blue shadow">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    </form>
+                    <form action="" class="modal__form modal__form-tab  modal__form-tab--active" data-tab-path="2">
+                        <div class="modal__subtitle">Выберите автомобиль:</div>
+                        <div class="select-tarif">
+                            <div class="select-tarif__show">
+                                <div class="select-tarif__show-item select-tarif__show-item--active" data-tarif-show="1">
+                                    <div class="select-tarif__show-title">Porsche Boxter S</div>
+                                    <div class="select-tarif__show-price">от 10 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="2">
+                                    <div class="select-tarif__show-title">Ford Mustang</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="3">
+                                    <div class="select-tarif__show-title">Chevrolet Camarodiv</div>
+                                    <div class=" select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="4">
+                                    <div class="select-tarif__show-title">Mini Hatch One</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="5">
+                                    <div class="select-tarif__show-title">Audi TT</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                                <div class="select-tarif__show-item" data-tarif-show="6">
+                                    <div class="select-tarif__show-title">Bentley Continental GT 2</div>
+                                    <div class="select-tarif__show-price">от 12 000 руб/сутки</div>
+                                    <svg width="6" height="3" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.65 2.64">
+						  <path fill="#009aa8" d="M296,419.15a.32.32,0,0,1,.22.54l-2,2a.31.31,0,0,1-.44,0l-2-2a.32.32,0,0,1,.22-.54Z" transform="translate(-291.67 -419.15)"></path>
+						</svg>
+                                </div>
+                            </div>
+
+                            <div class="select-tarif__hidden">
+                                <div class="select-tarif__hidden-item select-tarif__hidden-item--active" data-tarif-show="1">
+                                    <div class="select-tarif__hidden-title">Porsche Boxter S</div>
+                                    <div class="select-tarif__hidden-price">от 10 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="2">
+                                    <div class="select-tarif__hidden-title">Ford Mustang</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="3">
+                                    <div class="select-tarif__hidden-title">Chevrolet Camarodiv</div>
+                                    <div class=" select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="4">
+                                    <div class="select-tarif__hidden-title">Mini Hatch One</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="5">
+                                    <div class="select-tarif__hidden-title">Audi TT</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                                <div class="select-tarif__hidden-item" data-tarif-show="6">
+                                    <div class="select-tarif__hidden-title">Bentley Continental GT 2</div>
+                                    <div class="select-tarif__hidden-price">от 12 000 руб/сутки</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Ваша фамилия и имя">
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Электронная почта">
+                        </div>
+                        <div class="modal__form-group">
+                            <input type="text" placeholder="Номер телефона">
+                        </div>
+                        <button class="modal__btn btn btn-blue shadow">ОТПРАВИТЬ ЗАЯВКУ</button>
+                    </form>
+                    <div class="modal__hint">
+                        Нажимая кнопку отправить, вы соглашаетесь с <br> <a href="">условиями обработки данных</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal3" id="modal3" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <button type="button" class="modal__close close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">
+				  <svg width="16" height="16" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+					<path fill="#a5aaad" d="M298.92,420.81l5-5a.6.6,0,1,0-.85-.85l-5,5-5-5a.6.6,0,1,0-.85.85l5,5-5,5a.61.61,0,0,0,0,.85.62.62,0,0,0,.85,0l5-5,5,5a.62.62,0,0,0,.85,0,.61.61,0,0,0,0-.85Z" transform="translate(-292.08 -414.81)"></path>
+				  </svg>
+				</span>
+			  </button>
+                <div class="modal3__content">
+                    <div class="modal3__left">
+                        <div class="modal3__title">Забронировать автомобиль</div>
+                        <div class="modal3__subtitle">Porsche Boxter S</div>
+                        <div class="modal3__desc">
+                            <p>Мы свяжемся с вами в течение часа в рабочее время для уточнения деталей.</p>
+                            <p>Либо забронируйте автомобиль по номерам:</p>
+                        </div>
+                        <a href="tel:8 800 2014 888" class="modal3__phone">8 800 2014 888</a>
+                        <a href="" class="modal3__whatsapp">
+                            <strong>8 924 259 0089</strong>
+                            <svg width="13" height="13" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 12.25">
+						<path fill="#fff" d="M300.12,420.43A6.12,6.12,0,0,1,294,426.5h0a6.06,6.06,0,0,1-2.9-.73l-3.22.84.86-3.14a6.08,6.08,0,0,1,5.26-9.11,6,6,0,0,1,4.29,1.78A6.08,6.08,0,0,1,300.12,420.43Zm-1,0a5.07,5.07,0,1,0-9.37,2.69l.12.19-.51,1.86,1.91-.5.18.11a5,5,0,0,0,2.57.7A5.1,5.1,0,0,0,299.09,420.43Zm-2,1.45a1.42,1.42,0,0,1-.09.72,1.58,1.58,0,0,1-1,.73,3,3,0,0,1-1.83-.38,6.84,6.84,0,0,1-2.59-2.29,3.07,3.07,0,0,1-.62-1.57,1.74,1.74,0,0,1,.53-1.27.58.58,0,0,1,.41-.19h.29c.09,0,.22,0,.34.26s.43,1.05.47,1.12a.28.28,0,0,1,0,.27c-.29.58-.6.56-.44.83a4.05,4.05,0,0,0,2.06,1.8.23.23,0,0,0,.33,0c.09-.1.38-.44.48-.59s.2-.13.34-.08.89.42,1,.49S297,421.81,297.05,421.88Z" transform="translate(-287.87 -414.36)"></path>
+					</svg>
+                            <span>WhatsApp</span>
+                        </a>
+                        <div class="modal3__hint">
+                            Нажимая кнопку отправить, вы соглашаетесь с <br>
+                            <a href="">условиями обработки данных</a>
+                        </div>
+                    </div>
+                    <div class="modal3__right">
+                        <form class="modal3__form">
+                            <div class="modal3__form-title">Укажите тип аренды и город:</div>
+                            <div class="modal3__form-group">
+                                <select class="select">
+						<option>Аренда без водителя</option>
+						<option>Аренда без водителя 2</option>
+					  </select>
+                            </div>
+                            <div class="modal3__form-group">
+                                <select class="select">
+						<option>Владивосток</option>
+						<option>Владивосток 2</option>
+					  </select>
+                            </div>
+                            <hr/>
+                            <div class="modal3__form-group">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="modal3__form-groups">
+                                <div class="modal3__form-group modal3__form-group--w50">
+                                    <input class="datepicker" type="date" data-placeholder="Начало аренды" required aria-required="true">
+                                </div>
+                                <div class="modal3__form-group modal3__form-group--w50">
+                                    <input class="datepicker" type="date" data-placeholder="Конец аренды" required aria-required="true">
+                                </div>
+                            </div>
+                            <div class="modal3__form-group modal3__form-group--w70">
+                                <input type="text" placeholder="Номер телефона">
+                            </div>
+                            <button class="modal3__btn modal__btn btn btn-blue shadow">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal4" id="modal4" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <button type="button" class="modal__close close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">
+				  <svg width="16" height="16" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+					<path fill="#a5aaad" d="M298.92,420.81l5-5a.6.6,0,1,0-.85-.85l-5,5-5-5a.6.6,0,1,0-.85.85l5,5-5,5a.61.61,0,0,0,0,.85.62.62,0,0,0,.85,0l5-5,5,5a.62.62,0,0,0,.85,0,.61.61,0,0,0,0-.85Z" transform="translate(-292.08 -414.81)"></path>
+				  </svg>
+				</span>
+			  </button>
+                <div class="modal4__content">
+                    <div class="modal4__icon">
+                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.46 170.41"><path fill="#019aa8" d="M224.8,416.33a1.5,1.5,0,1,0-2.17,2.07l4.55,4.77a1.51,1.51,0,0,0,2.12.05,1.5,1.5,0,0,0,0-2.12Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M241.51,432.37a1.5,1.5,0,0,0-2.11,2.14l22.73,22.39a1.48,1.48,0,0,0,1.05.43,1.53,1.53,0,0,0,1.07-.44,1.51,1.51,0,0,0,0-2.13Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M267.81,458.12a1.5,1.5,0,0,0-2.17,2.08l5.1,5.32a1.53,1.53,0,0,0,1.08.46,1.48,1.48,0,0,0,1-.42,1.5,1.5,0,0,0,.05-2.12Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M327.29,423.37l9.2,6.32a1.46,1.46,0,0,0,.84.26,1.5,1.5,0,0,0,.85-2.73L329,420.9a1.5,1.5,0,0,0-1.69,2.47Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M226,436.7a1.5,1.5,0,0,0-2.11,2.13l7.54,7.43a1.5,1.5,0,0,0,2.12,0,1.5,1.5,0,0,0,0-2.12Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M240.54,451.24a1.5,1.5,0,1,0-2.16,2.09l30.92,32.14a1.5,1.5,0,1,0,2.16-2.08Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M338.63,476.91l-28.27,9.54a1.5,1.5,0,0,0,.48,2.92,1.61,1.61,0,0,0,.48-.08l28.27-9.53a1.5,1.5,0,0,0-1-2.85Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M359.46,469.71l-14,4.77a1.49,1.49,0,0,0-.94,1.9,1.51,1.51,0,0,0,1.42,1,1.67,1.67,0,0,0,.49-.08l14-4.77a1.5,1.5,0,1,0-1-2.84Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M384.69,390.21a2,2,0,0,0,0-.34c0-.24-.13-24.71-1.23-38.68-1.2-15.25-20.11-15.9-20.3-15.91H363c-.73.08-72.85,8.13-91,10.87-19.4,2.94-18.63,23.3-18.62,23.51,0,0,0,.07,0,.11s1.34,11,2.87,22l-48.8,10.5a5,5,0,0,0-4.24,5.29h0v15.47a5.84,5.84,0,0,0,1.54,3.64c1.17,1.35,69,72,71.87,75l.13.12a18.87,18.87,0,0,0,11.35,3.81,19.26,19.26,0,0,0,6.21-1.05c9-3.06,75.13-27.35,78.86-28.72.94-.14,4-.92,5.23-5,1.18-3.87,2.81-13.58,2.88-14s.73-5.26-2.09-7.07c-1.53-1-29.17-20.84-45.68-32.73,14.46-2.72,29.48-5.53,34.74-6.46C380.45,408.5,384.52,391,384.69,390.21ZM207.92,405.28l48.79-10.49c.3,2.09.6,4.17.89,6.15l-46.23,11.24-5.06-5.13A1.94,1.94,0,0,1,207.92,405.28Zm170.45,51.14c0,.1-1.66,9.92-2.79,13.61-.81,2.66-2.62,2.91-2.8,2.93h-.23l-.21.08c-.69.25-69.75,25.63-78.94,28.75a15.94,15.94,0,0,1-14.63-2.18c-24.39-25.43-70.67-73.7-71.72-74.87a3.12,3.12,0,0,1-.79-1.67V411.27L277,482.94a1.39,1.39,0,0,0,.27.21c.35.22,7.27,4.54,14.35,4.54a14.34,14.34,0,0,0,4.67-.73c7.67-2.63,77.77-26.36,78.48-26.6a1.52,1.52,0,0,0,.94-1.91,1.5,1.5,0,0,0-1.9-.93c-.71.23-70.82,24-78.49,26.6-6.51,2.23-15.12-2.71-16.31-3.42l-7.38-7.49L365.86,444c6.33,4.53,11.11,7.94,11.76,8.36C378.43,452.87,378.57,455.06,378.37,456.42ZM362.8,441.81l-93.59,29-55.38-56.14,44.23-10.75c.42,2.75.83,5.22,1.21,7.19,2,10.55,13.53,13.86,17.87,15.11l.6.17c.16,1,.41,2.83.63,4.39.31,2.32.64,4.72.9,6.15a4.31,4.31,0,0,0,1.84,3,4.23,4.23,0,0,0,2.28.63,4.47,4.47,0,0,0,1-.1,1.48,1.48,0,0,0,.71-.4l16.86-17,27.55-5.21C332.25,419.86,349.68,432.41,362.8,441.81Zm-61.88-21.59a1.51,1.51,0,0,0-.79.41l-16.8,16.91a1.11,1.11,0,0,1-.6-.16,1.48,1.48,0,0,1-.51-1c-.25-1.35-.58-3.82-.88-6-.61-4.45-.74-5.25-.95-5.71-.33-.74-.9-.9-2.42-1.34-3.86-1.1-14.11-4-15.76-12.78-2.13-11.31-5.6-39.53-5.79-41.07a25.08,25.08,0,0,1,1.75-9.36c2.52-6.23,7.34-9.93,14.32-11,17.73-2.69,87.54-10.49,90.73-10.84,1.48,0,16.33.95,17.29,13.13,1,13.23,1.2,36,1.21,38.28-.41,1.68-4.3,16.29-13.94,18C356.59,409.66,301.47,420.11,300.92,420.22Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M313,371.71l-39.32,5.82a1.5,1.5,0,0,0,.22,3l.22,0,39.32-5.82a1.5,1.5,0,0,0-.44-3Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M313,379.71l-39.32,5.82a1.5,1.5,0,0,0,.22,3l.22,0,39.32-5.82a1.5,1.5,0,0,0-.44-3Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M313,387.71l-39.32,5.82a1.5,1.5,0,0,0,.22,3l.22,0,39.32-5.82a1.5,1.5,0,0,0-.44-3Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M335.15,371.67a1.5,1.5,0,1,0-1.81,2.39l10.93,8.33a1.49,1.49,0,0,0,.91.31l.22,0a1.48,1.48,0,0,0,1-.62l20.54-29a1.51,1.51,0,0,0-.36-2.09,1.49,1.49,0,0,0-2.09.36l-19.64,27.76Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M364.09,364.39l-.21.11-.19.13c-.11.1-.22.19-.32.3s-.2.27-.32.37l0,0c.09-.12.22-.19,0,0h0l-.14.19a9,9,0,0,0-.53,1l-.09.21A19.48,19.48,0,1,1,354.8,359a16,16,0,0,0,1.55-2.27c0-.09,0-.18.07-.26a22.46,22.46,0,1,0,8,7.8Z" transform="translate(-203.26 -335.28)"></path><path fill="#019aa8" d="M326.89,458.28c-4.71,0-8.4,2.72-8.4,6.2s3.69,6.19,8.4,6.19,8.39-2.72,8.39-6.19S331.59,458.28,326.89,458.28Zm0,9.39c-2.88,0-5.4-1.49-5.4-3.19s2.52-3.2,5.4-3.2,5.39,1.5,5.39,3.2S329.76,467.67,326.89,467.67Z" transform="translate(-203.26 -335.28)"></path></svg>
+                    </div>
+                    <div class="modal4__title">
+                        Заявка успешно <br> отправлена
+                    </div>
+                    <div class="modal4__desc">В ближайшее время мы обязательно с Вами свяжемся. Ожидайте звонка.</div>
+                    <button class="modal4__close2" data-dismiss="modal">
+				  <span>закрыть сообщение</span>
+				</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal5" id="modal5" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+
+                <div class="modal5__content">
+                    <div class="modal5__top">
+                        <svg width="32" height="32" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.99 14.99">
+					<circle fill="#009aa8" cx="7.5" cy="3.79" r="1.02"></circle>
+					<path fill="#009aa8" d="M298.55,413h-9.11a2.94,2.94,0,0,0-2.94,2.94V425a2.94,2.94,0,0,0,2.94,2.94h9.11a2.94,2.94,0,0,0,2.94-2.94v-9.11A2.94,2.94,0,0,0,298.55,413ZM300.13,425a1.58,1.58,0,0,1-1.58,1.58h-9.11a1.58,1.58,0,0,1-1.58-1.58v-9.11a1.58,1.58,0,0,1,1.58-1.58h9.11a1.58,1.58,0,0,1,1.58,1.58Z" transform="translate(-286.5 -412.99)"></path>
+					<path fill="#009aa8" d="M295.4,423.89h-.72v-5.45h-2a.68.68,0,0,0,0,1.36h.64v4.09h-.64a.69.69,0,0,0,0,1.37h2.73a.69.69,0,0,0,0-1.37Z" transform="translate(-286.5 -412.99)"></path>
+				  </svg>
+                        <div class="modal5__title">Контрольный код</div>
+                        <button type="button" class="modal__close close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">
+					  <svg width="16" height="16" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+						<path fill="#a5aaad" d="M298.92,420.81l5-5a.6.6,0,1,0-.85-.85l-5,5-5-5a.6.6,0,1,0-.85.85l5,5-5,5a.61.61,0,0,0,0,.85.62.62,0,0,0,.85,0l5-5,5,5a.62.62,0,0,0,.85,0,.61.61,0,0,0,0-.85Z" transform="translate(-292.08 -414.81)"></path>
+					  </svg>
+					</span>
+				  </button>
+                    </div>
+                    <div class="modal5__bottom">
+                        <p>Во всех автомобилях имеется полный набор для безопасности: профессиональный огнетушитель, аптечка, знак аварийной остановки, своевременное обслуживание авто.</p>
+                        <p>Цена клика инновационна. Привлечение аудитории, следовательно, искажает типичный продукт. Разработка медиаплана <a href="">трансформирует повседневный процесс</a> стратегического планирования. Исходя из структуры пирамиды Маслоу,
+                            медиа естественно поддерживает комплексный сегмент рынка.</p>
+                        <button class="modal5__close2" data-dismiss="modal">
+					<span>закрыть информационное окошко</span>
+				  </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src='js/jquery.mCustomScrollbar.concat.min.js'></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
