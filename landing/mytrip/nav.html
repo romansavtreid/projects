@@ -1,0 +1,202 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper strong {
+        font-size: 30px;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    strong:first-child {
+        margin-top: 0;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <strong>Страницы</strong>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Sign In
+        </a>
+        <a href="password-recovery.html" style="display: block; margin-bottom: 20px;">
+            Password recovery
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Sign Up
+        </a>
+        <a href="employee-dashboard.html" style="display: block; margin-bottom: 20px;">
+            Dashboard
+        </a>
+        <a href="employee-manage.html" style="display: block; margin-bottom: 20px;">
+            Manage account
+        </a>
+        <a href="employee-transactions.html" style="display: block; margin-bottom: 20px;">
+            Transactions
+        </a>
+        <a href="employee-cards.html" style="display: block; margin-bottom: 20px;">
+            My cards
+        </a>
+        <a href="employee-cards-empty.html" style="display: block; margin-bottom: 20px;">
+            My cards(empty)
+        </a>
+        <a href="employee-cards-error.html" style="display: block; margin-bottom: 20px;">
+            My cards(error)
+        </a>
+        <a href="support.html" style="display: block; margin-bottom: 20px;">
+            Support
+        </a>
+        <a href="organization-manage.html" style="display: block; margin-bottom: 20px;">
+            Manage account (Organization)
+        </a>
+        <a href="organization-transactions.html" style="display: block; margin-bottom: 20px;">
+            Transactions (Organization)
+        </a>
+        <a href="organization-employees.html" style="display: block; margin-bottom: 20px;">
+            Employees
+        </a>
+
+        <strong>Модалки</strong>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#addCard">
+            Add a new card
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#logout">
+            Logout
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#tarifIngo">
+            Your tariff plan
+        </button>
+
+
+
+
+    </div>
+
+    <div class="modal fade" id="addCard" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top">
+            <div class="modal__title">Add a new card</div>
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0008 0.800049C9.39758 0.800049 0.800781 9.39685 0.800781 20C0.800781 30.6032 9.39758 39.2 20.0008 39.2C30.604 39.2 39.2008 30.6032 39.2008 20C39.2008 9.39685 30.604 0.800049 20.0008 0.800049ZM27.532 25.2688C28.1576 25.8944 28.1576 26.9056 27.532 27.5312C27.22 27.8432 26.8104 28 26.4008 28C25.9912 28 25.5816 27.8432 25.2696 27.5312L20.0008 22.2624L14.732 27.5312C14.42 27.8432 14.0104 28 13.6008 28C13.1912 28 12.7816 27.8432 12.4696 27.5312C11.844 26.9056 11.844 25.8944 12.4696 25.2688L17.7384 20L12.4696 14.7312C11.844 14.1056 11.844 13.0944 12.4696 12.4688C13.0952 11.8432 14.1064 11.8432 14.732 12.4688L20.0008 17.7376L25.2696 12.4688C25.8952 11.8432 26.9064 11.8432 27.532 12.4688C28.1576 13.0944 28.1576 14.1056 27.532 14.7312L22.2632 20L27.532 25.2688Z" fill="white"/>
+                </svg>
+                <span>Close</span>
+            </button>
+        </div>
+        <div class="modal__content">
+            <div class="modal__hint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.4">
+                    <path d="M12 1C8.67619 1 6 3.67619 6 7V8C4.90694 8 4 8.90694 4 10V20C4 21.0931 4.90694 22 6 22H18C19.0931 22 20 21.0931 20 20V10C20 8.90694 19.0931 8 18 8V7C18 3.67619 15.3238 1 12 1ZM12 3C14.2762 3 16 4.72381 16 7V8H8V7C8 4.72381 9.72381 3 12 3ZM6 10H18V20H6V10ZM12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13Z" fill="#FA6410"/>
+                    </g>
+                </svg>
+                <span>All data is securely protected, be careful, check that the site is https://mytip.ae, otherwise leave the site immediately.</span>
+            </div>
+            <form class="modal__form">
+                <fieldset class='form-group modal__form--13'>
+                    <input type='text' />
+                    <label>Card Number</label>
+                </fieldset>
+                <fieldset class='form-group modal__form--13'>
+                    <input type='text' />
+                    <label>Cardholder Name</label>
+                </fieldset>
+                <fieldset class='form-group modal__form--12'>
+                    <input type='text' />
+                    <label>MM/YYYY</label>
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='text' />
+                    <label>CVV</label>
+                </fieldset>
+                <button class="modal__btn btn btn-orange modal__form--13">
+                    <span>Continue</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.787 6.23069C17.397 6.21569 17.0352 6.43882 16.8758 6.79507C16.7145 7.15132 16.7839 7.56757 17.0539 7.85257L20.0033 11.0401H1.43891C1.09203 11.0344 0.771406 11.2163 0.597031 11.5163C0.420781 11.8144 0.420781 12.1857 0.597031 12.4838C0.771406 12.7838 1.09203 12.9657 1.43891 12.9601H20.0033L17.0539 16.1476C16.8139 16.3988 16.7295 16.7588 16.8308 17.0907C16.932 17.4226 17.2039 17.6738 17.5414 17.7488C17.8808 17.8238 18.2333 17.7094 18.4639 17.4526L23.5058 12.0001L18.4639 6.54757C18.2914 6.35632 18.0458 6.24007 17.787 6.23069Z" fill="#FFBC97"/>
+                    </svg>
+                </button>
+            </form>
+            <div class="modal__pay">
+                <img src="img/card-grey.svg" alt="">
+                <img src="img/card-grey2.svg" alt="">
+                <img src="img/card-grey3.svg" alt="">
+                <img src="img/card-grey4.svg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade logout-modal" id="logout" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top">
+            <div class="modal__title">Logout</div>
+        </div>
+        <div class="modal__content">
+            <div class="modal__desc">Are you sure you want to logout?</div>
+            <div class="modal__buttons">
+                <button class="modal__btn btn btn-grey" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                <button class="modal__btn btn btn-orange">Logout</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade tarif-modal" id="tarifIngo" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top">
+            <div class="modal__subtitle">Your tariff plan</div>
+            <div class="modal__title">Minimal</div>
+        </div>
+        <div class="modal__content">
+            <div class="manage__info-item">
+                <span class="manage__info-title">Receiving fee:</span>
+                <span class="manage__info-desc">5% from tip amount</span>
+            </div>
+            <div class="manage__info-item">
+                <span class="manage__info-title">Withdrawal amount:</span>
+                <span class="manage__info-desc">100 AED ninimum</span>
+            </div>
+            <button class="modal__btn btn btn-orange" data-bs-dismiss="modal" aria-label="Close">
+                <span>OK</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> -->
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
