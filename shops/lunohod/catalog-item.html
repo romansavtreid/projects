@@ -1,0 +1,896 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class='header-nav'>
+    <div class='container'>
+        <div class='header-nav__inner'>
+            <a href="" class="header-nav__link">О нас</a>
+            <a href="" class="header-nav__link header-nav__link--active">Акции</a>
+            <a href="" class="header-nav__link">Доставка</a>
+            <a href="" class="header-nav__link">Оплата</a>
+            <a href="" class="header-nav__link">Контакты</a>
+            <a href="" class="header-nav__link">Блог</a>
+        </div>
+    </div>
+</section>
+
+<header class='header'>
+    <div class='container'>
+        <div class='header__inner'>
+            <a href="" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="header__info">
+                <div class="header__address">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00001 0C5.69167 0 3 2.69167 3 6.00001C3 6.99318 3.24831 7.9779 3.72035 8.85132L8.67189 17.8066C8.73781 17.926 8.86343 18 9.00001 18C9.13659 18 9.2622 17.926 9.32812 17.8066L14.2815 8.84837C14.7517 7.9779 15 6.99314 15 5.99998C15 2.69167 12.3083 0 9.00001 0ZM9.00001 9C7.34584 9 6.00002 7.65418 6.00002 6.00001C6.00002 4.34584 7.34584 3.00002 9.00001 3.00002C10.6542 3.00002 12 4.34584 12 6.00001C12 7.65418 10.6542 9 9.00001 9Z" fill="#F89D33"/>
+                    </svg>
+                    <div>
+                        <div class="header__address-title">г. Минск, ул. Уличная, д.28</div>
+                        <div class="header__address-hint">Время работы: с 8:00 до 22:00</div>
+                    </div>
+                </div>
+
+                <div class="header__contacts">
+                    <div class="header__phones">
+                        <a href="tel:+375290000000" class="header__phone">
+                            <img src="img/phone.svg" alt="">
+                            <span>+ 375 29 000-00-00</span>
+                        </a>
+                        <a href="tel:+375290000000" class="header__phone">
+                            <img src="img/phone.svg" alt="">
+                            <span>+ 375 29 000-00-00</span>
+                        </a>
+                    </div>
+                    <button class="header__contacts-toggler btn">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10.8984" y="4.94971" width="7" height="1.16667" transform="rotate(135 10.8984 4.94971)" fill="#F89D33"/>
+                            <rect x="5.94922" y="9.89941" width="7" height="1.16667" transform="rotate(-135 5.94922 9.89941)" fill="#F89D33"/>
+                        </svg>
+                    </button>
+                    <div class="header__socials">
+                        <a href="" class="header__socials-item">
+                            <img src="img/viber.svg" alt="">
+                            <span>+ 375 29 000-00-00</span>
+                        </a>
+                        <a href="" class="header__socials-item">
+                            <img src="img/telegram.svg" alt="">
+                            <span>+ 375 29 000-00-00</span>
+                        </a>
+                        <a href="" class="header__socials-item">
+                            <img src="img/whatsapp.svg" alt="">
+                            <span>+ 375 29 000-00-00</span>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="header__toggle-search"></button>
+            </div>
+            <button class="header__btn btn btn-orange">
+                <span>Каталог</span>
+                <img src="img/arrow.svg" alt="" class="header__btn-arrow">
+                <img src="img/catalog-icon.svg" alt="" class="header__btn-icon">
+                <img src="img/close.svg" alt="" class="header__btn-close">
+            </button>
+            <form class="header__search">
+                <input type="text" placeholder="Введите название товара...">
+                <button class="header__search-btn">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.9395 12.8735C8.3696 12.8735 9.7588 12.3964 10.887 11.5176L15.1436 15.7741C15.4615 16.0812 15.9682 16.0724 16.2753 15.7544C16.5749 15.4442 16.5749 14.9525 16.2753 14.6423L12.0188 10.3858C14.1994 7.57881 13.6916 3.53554 10.8846 1.35494C8.07756 -0.825663 4.03433 -0.317876 1.85372 2.48915C-0.326884 5.29618 0.180903 9.33944 2.98793 11.52C4.11801 12.3979 5.50846 12.8742 6.9395 12.8735ZM3.51943 3.01819C5.4083 1.12928 8.47077 1.12925 10.3597 3.01812C12.2486 4.90699 12.2486 7.96945 10.3597 9.85835C8.47087 11.7473 5.40841 11.7473 3.5195 9.85842C3.51947 9.85839 3.51947 9.85839 3.51943 9.85835C1.63056 7.98325 1.61943 4.93195 3.49454 3.04308C3.50282 3.03476 3.51111 3.02647 3.51943 3.01819Z" fill="#1D1D1D"/>
+                    </svg>
+                </button>
+            </form>
+            <a href="" class="header__cart">
+                <div class="header__cart-icon btn btn-orange">
+                    <img src="img/cart.svg" alt="">
+                </div>
+                <div class="header__cart-price">0,00 р</div>
+            </a>
+
+            <div class="menu">
+                <div class="menu__inner">
+    <div class="menu__item nst-component nst-is-collapsed nst-manual-init">
+        <div class="menu__item-show nst-toggle">
+            <img src="img/menu-icon.svg" alt="">
+            <span>Роботы-пылесосы</span>
+        </div>
+        <div class="menu__item-hidden nst-content">
+            <div class="menu__item-links">
+                <a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu__item nst-component nst-is-collapsed nst-manual-init">
+        <div class="menu__item-show nst-toggle">
+            <img src="img/menu-icon2.svg" alt="">
+            <span>Пылесосы вертикальные</span>
+        </div>
+        <div class="menu__item-hidden nst-content">
+            <div class="menu__item-links">2 <a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu__item nst-component nst-is-collapsed nst-manual-init">
+        <div class="menu__item-show nst-toggle">
+            <img src="img/menu-icon3.svg" alt="">
+            <span>Аксессуары к пылесосам</span>
+        </div>
+        <div class="menu__item-hidden nst-content">
+            <div class="menu__item-links">3 <a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu__item nst-component nst-is-collapsed nst-manual-init">
+        <div class="menu__item-show nst-toggle">
+            <img src="img/menu-icon4.svg" alt="">
+            <span>VR очки</span>
+        </div>
+        <div class="menu__item-hidden nst-content">
+            <div class="menu__item-links">4 <a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu__item nst-component nst-is-collapsed nst-manual-init">
+        <div class="menu__item-show nst-toggle">
+            <img src="img/menu-icon5.svg" alt="">
+            <span>Аксессуары к VR очкам</span>
+        </div>
+        <div class="menu__item-hidden nst-content">
+            <div class="menu__item-links">5 <a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu__item nst-component nst-is-collapsed nst-manual-init">
+        <div class="menu__item-show nst-toggle">
+            <img src="img/menu-icon6.svg" alt="">
+            <span>Экшн камеры</span>
+        </div>
+        <div class="menu__item-hidden nst-content">
+            <div class="menu__item-links">6 <a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu__item nst-component nst-is-collapsed nst-manual-init">
+        <div class="menu__item-show nst-toggle">
+            <img src="img/menu-icon7.svg" alt="">
+            <span>Беспроводные наушники</span>
+        </div>
+        <div class="menu__item-hidden nst-content">
+            <div class="menu__item-links">7 <a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+<a href="" class="menu__link">XIAOMI</a>
+<a href="" class="menu__link">HOBOT</a>
+<a href="" class="menu__link">ICLEBO</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="menu__backdrop"></div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="content">
+
+            <section class='catalog-item'>
+                <div class='container'>
+                    <div class='breadcrumbs'>
+    <a href="" class="breadcrumbs__item">Главная</a>
+    <!--  -->
+    
+    <!--  -->
+    
+    <!--  -->
+    
+    <a href="" class="breadcrumbs__item">Каталог</a>
+    <a href="" class="breadcrumbs__item">Беспроводные наушники</a>
+    <span class="breadcrumbs__item">Беспроводные наушники Apple AirPods Pro MWP22</span> 
+</div>
+
+
+                    <h1 class="catalog-item__title">Беспроводные наушники Apple AirPods Pro MWP22</h1>
+                    <div class="catalog-item__art">(арт. 000000)</div>
+                    <div class='catalog-item__inner'>
+                        <div class="catalog-item__left">
+                            <div class="catalog-gallery">
+                                <div class="catalog-gallery__badges">
+                                    <div class="catalog-gallery__badge">Новинка</div>
+                                </div>
+                                <div class="catalog-gallery__big swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog6.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div thumbsSlider="" class="catalog-gallery__small swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog6.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog.webp" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/catalog2.webp" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-item__right">
+                            <div class="catalog-item__price1">800.00 руб.</div>
+                            <div class="catalog-item__price2">777.00 руб.</div>
+                            <div class="catalog-item__has">
+                                <img src="img/correct.svg" alt="">
+                                <span>Есть в наличии</span>
+                            </div>
+
+                            <div class="catalog-item__radios">
+                                <div class="catalog-item__radios-title">
+                                    Цвет: <span class="catalog-item__radios-val"></span>
+                                </div>
+                                <div class="catalog-item__radios-wrap">
+                                    <div class="catalog-item__color catalog-item__radio">
+                                        <img src="img/catalog6.webp" alt="">
+                                        <input checked type='radio' name="color" value="белый" />
+                                        <label></label>
+                                    </div>
+                                    <div class="catalog-item__color catalog-item__radio">
+                                        <img src="img/catalog6.webp" alt="">
+                                        <input type='radio' name="color" value="синий" />
+                                        <label></label>
+                                    </div>
+                                    <div class="catalog-item__color catalog-item__radio">
+                                        <img src="img/catalog6.webp" alt="">
+                                        <input type='radio' name="color" value="красный" />
+                                        <label></label>
+                                    </div>
+                                    <div class="catalog-item__color catalog-item__radio">
+                                        <img src="img/catalog6.webp" alt="">
+                                        <input type='radio' name="color" value="жёлтый" />
+                                        <label></label>
+                                    </div>
+                                    <div class="catalog-item__color catalog-item__radio">
+                                        <img src="img/catalog6.webp" alt="">
+                                        <input type='radio' name="color" value="зелёный" />
+                                        <label></label>
+                                    </div>
+                                    <div class="catalog-item__color catalog-item__radio">
+                                        <img src="img/catalog6.webp" alt="">
+                                        <input type='radio' name="color" value="голубой" />
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-item__radios">
+                                <div class="catalog-item__radios-title">
+                                    Объем памяти: <span class="catalog-item__radios-val"></span>
+                                </div>
+                                <div class="catalog-item__radios-wrap">
+                                    <div class="catalog-item__memory catalog-item__radio">
+                                        <input checked type='radio' name="memory" value="32 ГБ" />
+                                        <label></label>
+                                        <span>32 ГБ</span>
+                                    </div>
+                                    <div class="catalog-item__memory catalog-item__radio">
+                                        <input type='radio' name="memory" value="64 ГБ" />
+                                        <label></label>
+                                        <span>64 ГБ</span>
+                                    </div>
+                                    <div class="catalog-item__memory catalog-item__radio">
+                                        <input type='radio' name="memory" value="128 ГБ" />
+                                        <label></label>
+                                        <span>128 ГБ</span>
+                                    </div>
+                                    <div class="catalog-item__memory catalog-item__radio">
+                                        <input type='radio' name="memory" value="256 ГБ" />
+                                        <label></label>
+                                        <span>256 ГБ</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-item__calc">
+                                <div class="catalog-item__calc-title">Количество:</div>
+                                <div class='cartcalc form-group catalog-item__calc-input'>
+                                    <button class='ccalc-minus'>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F89D33"/>
+                                            <path d="M6.54297 10.596H13.725V9.21002H6.54297V10.596Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="#F89D33"/>
+                                            <path d="M6.54297 10.596H13.725V9.21002H6.54297V10.596Z" fill="white"/>
+                                            <path d="M9.44212 6.31201L9.44212 13.494L10.8281 13.494L10.8281 6.31201L9.44212 6.31201Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="catalog-item__buttons">
+                                <button class="catalog-item__btn catalog-item__btn--cart btn btn-orange">
+                                    <span>В корзину</span>
+                                    <img src="img/cart.svg" alt="">
+                                </button>
+                                <button class="catalog-item__btn btn btn-orange-outline">
+                                    <span>Покупка в 1 клик</span>
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.96019 5.9696C4.83673 5.55152 4.71818 5.13274 4.62909 4.73149C4.04335 4.38496 3.64491 3.75433 3.64491 3.02549C3.64491 1.92907 4.53649 1.03819 5.63221 1.03819C6.72792 1.03819 7.6195 1.92977 7.6195 3.02549C7.6195 3.17631 7.59916 3.32151 7.56759 3.46251C7.75769 3.88129 7.91132 4.35269 8.046 4.8318C8.4248 4.32673 8.65769 3.70592 8.65769 3.02549C8.65769 1.35386 7.30384 0 5.63221 0C3.96058 0 2.60742 1.35386 2.60742 3.02549C2.60742 4.46493 3.61405 5.66376 4.96019 5.9696Z" fill="#F89D33"/>
+                                        <path d="M2.8698 13.1324C3.61547 12.3264 4.45234 12.6421 5.5726 12.8126C6.53503 12.9606 7.48274 12.6905 7.4196 12.1707C7.31999 11.3296 7.1797 10.9536 6.86052 9.86424C6.60588 8.99791 6.12256 7.43641 5.68273 5.94366C5.09349 3.94654 4.92303 3.01919 5.70729 2.7877C6.55257 2.54148 7.03729 3.74241 7.47642 5.40773C7.97658 7.30313 8.23963 8.14 8.38694 8.0958C8.64649 8.02145 8.29154 7.21054 8.97058 7.01061C9.81937 6.76369 9.98351 7.42729 10.2213 7.36065C10.4591 7.2891 10.3784 6.61708 11.0554 6.41926C11.7358 6.22285 12.0774 7.06042 12.358 6.97694C12.6358 6.89487 12.6295 6.59253 13.049 6.47258C13.4692 6.34771 15.0503 7.05551 15.9552 10.1469C17.0909 14.0338 15.8114 14.7564 16.1993 16.0723L11.1297 18C10.7194 17.013 9.44828 16.9401 8.32381 16.3108C7.19092 15.6732 6.42139 14.4309 3.46886 14.4912C2.35842 14.5137 2.41103 13.6284 2.8698 13.1324Z" fill="#F89D33"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages">
+                        <div class="advantages__item">
+    <span class="advantages__item-icon">
+        <img src="img/advantages-icon.svg" alt="">
+    </span>
+    <span class="advantages__item-title">Бесплатная доставка,самовывоз</span>
+</div>
+<div class="advantages__item">
+    <span class="advantages__item-icon">
+        <img src="img/advantages-icon2.svg" alt="">
+    </span>
+    <span class="advantages__item-title">Наличный и безналичный расчет</span>
+</div>
+<div class="advantages__item">
+    <span class="advantages__item-icon">
+        <img src="img/advantages-icon3.svg" alt="">
+    </span>
+    <span class="advantages__item-title">Профессиональная консультация</span>
+</div>
+<div class="advantages__item">
+    <span class="advantages__item-icon">
+        <img src="img/advantages-icon4.svg" alt="">
+    </span>
+    <span class="advantages__item-title">Гарантия качества</span>
+</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='catalog-detail'>
+                <div class='container'>
+                    <div class='catalog-detail__tabs'>
+                        <div class="catalog-detail__tab catalog-detail__tab--active" data-tabs-path="1">Описание</div>
+                        <div class="catalog-detail__tab" data-tabs-path="2">Характеристики</div>
+                        <div class="catalog-detail__tab" data-tabs-path="3">Условия доставки</div>
+                    </div>
+                    <div class="catalog-detail__contents">
+                        <div class="catalog-detail__content catalog-detail__content--active" data-tabs-path="1">
+                            <div class="catalog-detail__mob-tab catalog-detail__mob-tab--active">
+                                <span>Описание</span>
+                                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1L4.5 4.5L1 1" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                            <div class="catalog-detail__mob">
+                                <div class="catalog-detail__text">
+                                    <p>Рады представить второе поколение высокотехнологичных беспроводных гарнитур от купертиновцев. Это стиль, компактность, впечатляющая автономия без подзарядки и масса других преимуществ.</p>
+                                    <p>Элегантная модель белого цвета стоит дешевле второй версии, поскольку поставляется без беспроводной зарядки чехла, но совместима со сторонними Qi-станциями. В интернет-магазине Fotomix можно выгодно купить наушники
+                                        AirPods 2 по антикризисным ценам с доставкой по Минску и другим белорусским городам.</p>
+                                    <p>Уже пользовались первым поколением? Тогда вы приятно удивитесь изменениям в линейке. Прежде всего, подключение происходит на 30 % быстрее. Многоядерный микропроцессор H1 лучше справляется с обработкой сигнала и взаимодействует
+                                        с Bluetooth-модулем.</p>
+
+                                    <div class="catalog-detail__images">
+                                        <img src="img/catalog-detail.jpg" alt="">
+                                        <img src="img/catalog-detail2.jpg" alt="">
+                                    </div>
+
+                                    <p>Рады представить второе поколение высокотехнологичных беспроводных гарнитур от купертиновцев. Это стиль, компактность, впечатляющая автономия без подзарядки и масса других преимуществ.</p>
+                                    <p>Элегантная модель белого цвета стоит дешевле второй версии, поскольку поставляется без беспроводной зарядки чехла, но совместима со сторонними Qi-станциями. В интернет-магазине Fotomix можно выгодно купить наушники
+                                        AirPods 2 по антикризисным ценам с доставкой по Минску и другим белорусским городам.</p>
+                                    <p>Уже пользовались первым поколением? Тогда вы приятно удивитесь изменениям в линейке. Прежде всего, подключение происходит на 30 % быстрее. Многоядерный микропроцессор H1 лучше справляется с обработкой сигнала и взаимодействует
+                                        с Bluetooth-модулем.</p>
+
+                                    <div class="catalog-detail__img">
+                                        <img src="img/catalog-detail3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-detail__content" data-tabs-path="2">
+                            <div class="catalog-detail__mob-tab">
+                                <span>Характеристики</span>
+                                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1L4.5 4.5L1 1" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                            <div class="catalog-detail__mob">
+                                <div class="props">
+                                    <div class="props__group">
+                                        <div class="props__head">Общие характеристики</div>
+                                        <div class="props__items">
+                                            <div class="props__item">
+                                                <div class="props__item-title">Тип устройства</div>
+                                                <div class="props__item-desc">динамические Bluetooth-наушники с микрофоном</div>
+                                            </div>
+                                            <div class="props__item">
+                                                <div class="props__item-title">Цвет корпуса</div>
+                                                <div class="props__item-desc">белый</div>
+                                            </div>
+                                            <div class="props__item">
+                                                <div class="props__item-title">Размер (ШxВxТ)</div>
+                                                <div class="props__item-desc">44.3 x 53.5 x 21.3 мм (кейс)</div>
+                                            </div>
+                                            <div class="props__item">
+                                                <div class="props__item-title">Вес</div>
+                                                <div class="props__item-desc">40 г (кейс), 4 г (наушник)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="props__group">
+                                        <div class="props__head">Связь</div>
+                                        <div class="props__items">
+                                            <div class="props__item">
+                                                <div class="props__item-title">Интерфейсы</div>
+                                                <div class="props__item-desc">Bluetooth 5.0</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="props__group">
+                                        <div class="props__head">Питание</div>
+                                        <div class="props__items">
+                                            <div class="props__item">
+                                                <div class="props__item-title">Время работы от аккумулятора</div>
+                                                <div class="props__item-desc">5 ч</div>
+                                            </div>
+                                            <div class="props__item">
+                                                <div class="props__item-title">Беспроводная зарядка</div>
+                                                <div class="props__item-desc">нет</div>
+                                            </div>
+                                            <div class="props__item">
+                                                <div class="props__item-title">Время работы от аккумулятора в кейсе</div>
+                                                <div class="props__item-desc">24 ч</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="props__group">
+                                        <div class="props__head">Звук</div>
+                                        <div class="props__items">
+                                            <div class="props__item">
+                                                <div class="props__item-title">Встроенный микрофон</div>
+                                                <div class="props__item-desc">есть, 2 шт</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="props__group">
+                                        <div class="props__head">Конструкция и внешний вид</div>
+                                        <div class="props__items">
+                                            <div class="props__item">
+                                                <div class="props__item-title">Конструкция</div>
+                                                <div class="props__item-desc">вкладыши</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="props__group">
+                                        <div class="props__head">Дополнительные возможности</div>
+                                        <div class="props__items">
+                                            <div class="props__item">
+                                                <div class="props__item-title">Особенности</div>
+                                                <div class="props__item-desc">голосовое управление; 15 минут зарядки хватает на 3 часа работы или 2 часа в режиме разговора</div>
+                                            </div>
+                                            <div class="props__item">
+                                                <div class="props__item-title">Система активного шумоподавления</div>
+                                                <div class="props__item-desc">нет</div>
+                                            </div>
+                                            <div class="props__item">
+                                                <div class="props__item-title">Дополнительная информация</div>
+                                                <div class="props__item-desc">функция «Совместный доступ к аудио» позволяет слушать песни, подкасты и любое другое аудио через две пары наушников AirPods</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-detail__content" data-tabs-path="3">
+                            <div class="catalog-detail__mob-tab">
+                                <span>Условия доставки</span>
+                                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1L4.5 4.5L1 1" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                            <div class="catalog-detail__mob">
+                                <div class="catalog-delivery">
+                                    <div class="catalog-delivery__group">
+                                        <div class="catalog-delivery__title">Самовывоз</div>
+                                        <div class="catalog-delivery__desc">
+                                            <p>Вы можете забрать оформленный заказ в нашем магазине в самом центре столицы по адресу: </p>
+                                            <p>Выдача товара производится: ПН-ВС с 10.00 до 20.00.</p>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-delivery__group">
+                                        <div class="catalog-delivery__title">Минск и Минская область</div>
+                                        <div class="catalog-delivery__desc">
+                                            <p>Стоимость доставки – бесплатно. Срок доставки – в течение дня.</p>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-delivery__group">
+                                        <div class="catalog-delivery__title">Доставка по Беларуси</div>
+                                        <div class="catalog-delivery__desc">
+                                            <p>Отправка заказов в другие города осуществляется транспортной компанией с оплатой при получении. Если вашего города нет в списке, достаточно позвонить на любой номер магазина, и наши менеджеры дадут всю необходимую
+                                                информацию.
+                                            </p>
+                                            <ul>
+                                                <li>Брест – бесплатно. Срок доставки – 1 рабочий день.</li>
+                                                <li>Витебск – бесплатно. Срок доставки – 1 рабочий день.</li>
+                                                <li>Гродно – бесплатно. Срок доставки – 1 рабочий день.</li>
+                                                <li>Гомель – бесплатно. Срок доставки – 1 рабочий день.</li>
+                                                <li>Могилёв – бесплатно. Срок доставки – 1 рабочий день.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-delivery__group">
+                                        <div class="catalog-delivery__desc">
+                                            <p>Время доставки согласовывается менеджером при подтверждении заказа. В случае каких-либо изменений мы в обязательном порядке согласуем новый интервал с покупателем.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='collection'>
+                <div class='container'>
+    <div class='collection__top'>
+        <div class="collection__title display2">Рекомендуемые товары</div>
+        <div class="collection__nav">
+            <div class='swiper-button-prev'>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.999999 4.99999L0 5.99999L0.999999 6.99999L5.99999 12L6.99999 11L2 5.99999L6.99999 0.999999L5.99999 0L0.999999 4.99999Z" fill="#1D1D1D" fill-opacity="0.2"/>
+                </svg>
+            </div>
+            <div class='swiper-button-next'>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.99999L7 5.99999L6 6.99999L1.00001 12L7.62939e-06 11L5 5.99999L7.15256e-06 0.999999L1.00001 0L6 4.99999Z" fill="#1D1D1D" fill-opacity="0.2"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="collection__slider">
+        <div class='swiper-container'>
+            <div class='swiper-wrapper'>
+                <div class='swiper-slide'>
+                    <div class="catalog-card">
+                        <div class="catalog-card__top">
+    <a href="" class="catalog-card__img">
+        <img src="img/catalog.webp" alt="">
+    </a>
+</div>
+<div class="catalog-card__bottom">
+    <a href="" class="catalog-card__title">Беспроводные наушники Apple AirPods Pro MWP22</a>
+    <div class="catalog-card__has">
+        <img src="img/correct.svg" alt="">
+        <span>Есть в наличии</span>
+    </div>
+    <div class="catalog-card__price">777.00 руб.</div>
+    <button class="catalog-card__btn btn btn-orange">
+        <span>В корзину</span>
+        <img src="img/cart.svg" alt="">
+    </button>
+</div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class="catalog-card">
+                        <div class="catalog-card__top">
+    <a href="" class="catalog-card__img">
+        <img src="img/catalog2.webp" alt="">
+    </a>
+</div>
+<div class="catalog-card__bottom">
+    <a href="" class="catalog-card__title">Ноутбук Apple MacBook Air 13 2020 Space Gray</a>
+    <div class="catalog-card__has">
+        <img src="img/correct.svg" alt="">
+        <span>Есть в наличии</span>
+    </div>
+    <div class="catalog-card__price">777.00 руб.</div>
+    <button class="catalog-card__btn btn btn-orange">
+        <span>В корзину</span>
+        <img src="img/cart.svg" alt="">
+    </button>
+</div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class="catalog-card">
+                        <div class="catalog-card__top">
+    <a href="" class="catalog-card__img">
+        <img src="img/catalog3.webp" alt="">
+    </a>
+</div>
+<div class="catalog-card__bottom">
+    <a href="" class="catalog-card__title">Умные часы Apple Watch Series 7 GPS 45mm </a>
+    <div class="catalog-card__has">
+        <img src="img/correct.svg" alt="">
+        <span>Есть в наличии</span>
+    </div>
+    <div class="catalog-card__price">777.00 руб.</div>
+    <button class="catalog-card__btn btn btn-orange">
+        <span>В корзину</span>
+        <img src="img/cart.svg" alt="">
+    </button>
+</div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class="catalog-card">
+                        <div class="catalog-card__top">
+    <a href="" class="catalog-card__img">
+        <img src="img/catalog4.webp" alt="">
+    </a>
+</div>
+<div class="catalog-card__bottom">
+    <a href="" class="catalog-card__title">Беззеркальный фотоаппарат Sony Alpha</a>
+    <div class="catalog-card__has">
+        <img src="img/correct.svg" alt="">
+        <span>Есть в наличии</span>
+    </div>
+    <div class="catalog-card__price">777.00 руб.</div>
+    <button class="catalog-card__btn btn btn-orange">
+        <span>В корзину</span>
+        <img src="img/cart.svg" alt="">
+    </button>
+</div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class="catalog-card">
+                        <div class="catalog-card__top">
+    <a href="" class="catalog-card__img">
+        <img src="img/catalog5.webp" alt="">
+    </a>
+</div>
+<div class="catalog-card__bottom">
+    <a href="" class="catalog-card__title">Экшн-камера Gopro Hero 10 Black CHDHX-101-RW</a>
+    <div class="catalog-card__has">
+        <img src="img/correct.svg" alt="">
+        <span>Есть в наличии</span>
+    </div>
+    <div class="catalog-card__price">777.00 руб.</div>
+    <button class="catalog-card__btn btn btn-orange">
+        <span>В корзину</span>
+        <img src="img/cart.svg" alt="">
+    </button>
+</div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class="catalog-card">
+                        <div class="catalog-card__top">
+    <a href="" class="catalog-card__img">
+        <img src="img/catalog2.webp" alt="">
+    </a>
+</div>
+<div class="catalog-card__bottom">
+    <a href="" class="catalog-card__title">Ноутбук Apple MacBook Air 13 2020 Space Gray</a>
+    <div class="catalog-card__has">
+        <img src="img/correct.svg" alt="">
+        <span>Есть в наличии</span>
+    </div>
+    <div class="catalog-card__price">777.00 руб.</div>
+    <button class="catalog-card__btn btn btn-orange">
+        <span>В корзину</span>
+        <img src="img/cart.svg" alt="">
+    </button>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+
+        </main>
+        <footer class='footer'>
+    <div class='container'>
+        <div class='footer__top'>
+            <div class="footer__col">
+                <div class="footer__title">Контакты</div>
+                <div class="footer__contacts">
+                    <a href="tel:+375290000000" class="footer__contacts-link">
+                        <img src="img/phone2.svg" alt="">
+                        <span>+ 375 29 000-00-00</span>
+                    </a>
+                    <a href="" class="footer__contacts-link">
+                        <img src="img/pin.svg" alt="">
+                        <span>г. Минск, ул. Уличная, д.28</span>
+                    </a>
+                    <a href="" class="footer__contacts-link">
+                        <img src="img/clock.svg" alt="">
+                        <span>с 8:00 до 22:00 Пн.-Сб.</span>
+                    </a>
+                </div>
+                <div class="footer__socials">
+                    <a href="" class="footer__socials-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.1055 11C13.1055 12.1628 12.1628 13.1055 11 13.1055C9.83716 13.1055 8.89453 12.1628 8.89453 11C8.89453 9.83716 9.83716 8.89453 11 8.89453C12.1628 8.89453 13.1055 9.83716 13.1055 11Z" fill="white"/>
+                            <path d="M15.9227 7.27483C15.8215 7.00056 15.66 6.75232 15.4502 6.54855C15.2464 6.33875 14.9983 6.17728 14.7239 6.07607C14.5013 5.98962 14.167 5.88673 13.5512 5.8587C12.885 5.82832 12.6852 5.82178 10.9987 5.82178C9.31203 5.82178 9.11229 5.82816 8.44627 5.85854C7.83044 5.88673 7.49593 5.98962 7.27353 6.07607C6.9991 6.17728 6.75085 6.33875 6.54726 6.54855C6.33745 6.75232 6.17598 7.0004 6.0746 7.27483C5.98816 7.49739 5.88527 7.83191 5.85724 8.44774C5.82686 9.11375 5.82031 9.31349 5.82031 11.0002C5.82031 12.6867 5.82686 12.8864 5.85724 13.5526C5.88527 14.1685 5.98816 14.5028 6.0746 14.7254C6.17598 14.9998 6.33728 15.2479 6.54709 15.4516C6.75085 15.6615 6.99893 15.8229 7.27336 15.9241C7.49593 16.0107 7.83044 16.1136 8.44627 16.1417C9.11229 16.172 9.31186 16.1784 10.9986 16.1784C12.6854 16.1784 12.8851 16.172 13.551 16.1417C14.1668 16.1136 14.5013 16.0107 14.7239 15.9241C15.2748 15.7116 15.7102 15.2762 15.9227 14.7254C16.0091 14.5028 16.112 14.1685 16.1402 13.5526C16.1706 12.8864 16.177 12.6867 16.177 11.0002C16.177 9.31349 16.1706 9.11375 16.1402 8.44774C16.1122 7.83191 16.0093 7.49739 15.9227 7.27483ZM10.9987 14.2435C9.20729 14.2435 7.75508 12.7914 7.75508 11C7.75508 9.20859 9.20729 7.75655 10.9987 7.75655C12.79 7.75655 14.2422 9.20859 14.2422 11C14.2422 12.7914 12.79 14.2435 10.9987 14.2435ZM14.3704 8.38631C13.9518 8.38631 13.6124 8.04692 13.6124 7.62831C13.6124 7.2097 13.9518 6.87032 14.3704 6.87032C14.789 6.87032 15.1284 7.2097 15.1284 7.62831C15.1283 8.04692 14.789 8.38631 14.3704 8.38631Z" fill="white"/>
+                            <path d="M11 0C4.9258 0 0 4.9258 0 11C0 17.0742 4.9258 22 11 22C17.0742 22 22 17.0742 22 11C22 4.9258 17.0742 0 11 0ZM17.2783 13.6041C17.2478 14.2765 17.1408 14.7356 16.9847 15.1374C16.6566 15.9859 15.9859 16.6566 15.1374 16.9847C14.7358 17.1408 14.2765 17.2476 13.6043 17.2783C12.9307 17.309 12.7156 17.3164 11.0002 17.3164C9.28461 17.3164 9.0696 17.309 8.39586 17.2783C7.72363 17.2476 7.2644 17.1408 6.86275 16.9847C6.44112 16.8261 6.05943 16.5775 5.74388 16.2561C5.42262 15.9407 5.17404 15.5589 5.01543 15.1374C4.85933 14.7358 4.75241 14.2765 4.72186 13.6043C4.69081 12.9306 4.68359 12.7154 4.68359 11C4.68359 9.28461 4.69081 9.06943 4.72169 8.39586C4.75224 7.72346 4.85899 7.2644 5.01509 6.86258C5.17371 6.44112 5.42245 6.05927 5.74388 5.74388C6.05927 5.42245 6.44112 5.17387 6.86258 5.01526C7.2644 4.85916 7.72346 4.75241 8.39586 4.72169C9.06943 4.69098 9.28461 4.68359 11 4.68359C12.7154 4.68359 12.9306 4.69098 13.6041 4.72186C14.2765 4.75241 14.7356 4.85916 15.1374 5.01509C15.5589 5.17371 15.9407 5.42245 16.2563 5.74388C16.5775 6.05943 16.8263 6.44112 16.9847 6.86258C17.141 7.2644 17.2478 7.72346 17.2785 8.39586C17.3092 9.06943 17.3164 9.28461 17.3164 11C17.3164 12.7154 17.3092 12.9306 17.2783 13.6041Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__socials-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 0C4.93462 0 0 4.93462 0 11C0 17.0649 4.93462 22 11 22C17.0649 22 22 17.0649 22 11C22 4.93462 17.0658 0 11 0ZM15.9072 8.4824C15.912 8.5914 15.9147 8.70128 15.9147 8.81116C15.9147 12.1569 13.3687 16.0135 8.71058 16.0135C7.28075 16.0135 5.94973 15.5957 4.82961 14.877C5.02767 14.9005 5.22928 14.9124 5.43354 14.9124C6.62012 14.9124 7.71143 14.5075 8.5781 13.8286C7.47039 13.8083 6.53504 13.0763 6.21292 12.07C6.36711 12.0993 6.52618 12.1157 6.68879 12.1157C6.91964 12.1157 7.14384 12.0856 7.35608 12.0275C6.19786 11.7953 5.32542 10.7723 5.32542 9.54491C5.32542 9.53428 5.32542 9.5232 5.32587 9.51301C5.66704 9.70221 6.0574 9.81652 6.47213 9.82937C5.79332 9.3761 5.34625 8.6007 5.34625 7.72251C5.34625 7.25816 5.47076 6.82305 5.68875 6.44909C6.93692 7.98127 8.80319 8.98884 10.907 9.09518C10.8635 8.90953 10.8418 8.71679 10.8418 8.51784C10.8418 7.11991 11.9752 5.98606 13.3732 5.98606C14.1016 5.98606 14.7587 6.29356 15.2213 6.78539C15.7986 6.67196 16.3392 6.46193 16.8297 6.17083C16.6391 6.76235 16.239 7.25816 15.7149 7.57186C16.2275 7.51071 16.7167 7.37513 17.1691 7.17353C16.8314 7.68042 16.4021 8.1266 15.9072 8.4824Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__socials-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.62891 13.0606L13.2071 10.9998L9.62891 8.93896V13.0606Z" fill="white"/>
+                            <path d="M11 0C4.9258 0 0 4.9258 0 11C0 17.0742 4.9258 22 11 22C17.0742 22 22 17.0742 22 11C22 4.9258 17.0742 0 11 0ZM17.8733 11.0112C17.8733 11.0112 17.8733 13.2421 17.5903 14.3178C17.4317 14.9066 16.9675 15.3709 16.3786 15.5293C15.3029 15.8125 11 15.8125 11 15.8125C11 15.8125 6.70833 15.8125 5.62135 15.5181C5.03255 15.3596 4.56828 14.8952 4.40967 14.3064C4.12651 13.2421 4.12651 11 4.12651 11C4.12651 11 4.12651 8.76932 4.40967 7.69359C4.56812 7.10478 5.04379 6.6291 5.62135 6.47066C6.69708 6.1875 11 6.1875 11 6.1875C11 6.1875 15.3029 6.1875 16.3786 6.4819C16.9675 6.64035 17.4317 7.10478 17.5903 7.69359C17.8847 8.76932 17.8733 11.0112 17.8733 11.0112Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">Покупателям</div>
+                <div class="footer__links">
+                    <a href="" class="footer__link">О нас</a>
+                    <a href="" class="footer__link">Доставка</a>
+                    <a href="" class="footer__link">Оплата</a>
+                    <a href="" class="footer__link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">Каталог</div>
+                <div class="footer__links">
+                    <a href="" class="footer__link">Apple</a>
+                    <a href="" class="footer__link">Фотоаппараты</a>
+                    <a href="" class="footer__link">Объективы</a>
+                    <a href="" class="footer__link">Аксессуары для фото</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__title">Дополнительно</div>
+                <div class="footer__links">
+                    <a href="" class="footer__link">Политика безопасности</a>
+                    <a href="" class="footer__link">Условия пользования</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Company © 2022
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
